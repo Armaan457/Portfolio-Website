@@ -1,6 +1,7 @@
-import logo from '../assets/ArmaanJagirdarLogo.png';
+import logo from '../assets/Logo.png';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
+import { PiReadCvLogoBold } from "react-icons/pi";
 
 const Navbar = () => {
     return (
@@ -14,6 +15,9 @@ const Navbar = () => {
                 </a>
                 <a href="https://github.com/Armaan457" target="_blank" rel="noopener noreferrer">
                     <FaGithub />
+                </a>
+                <a href="https://drive.google.com/file/d/134mjbJoC4kXuoJ7oopL9l7H_xe0UkjIY/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <PiReadCvLogoBold />
                 </a>
            </div>
         </nav>

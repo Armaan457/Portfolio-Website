@@ -6,9 +6,9 @@ import { SiTensorflow } from "react-icons/si";
 import { SiPytorch } from "react-icons/si";
 import { SiHuggingface } from "react-icons/si";
 import { SiLangchain } from "react-icons/si";
-import crewailogo from "../assets/crewaiLogo.png";
-import langgraphlogo from "../assets/langgraphLogo.png";
-import sklearnlogo from "../assets/sklearnLogo.png";
+import crewailogo from "../assets/Technologies/crewaiLogo.png";
+import langgraphlogo from "../assets/Technologies/langgraphLogo.png";
+import sklearnlogo from "../assets/Technologies/sklearnLogo.png";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({

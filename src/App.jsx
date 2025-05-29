@@ -1,8 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Technologies from './components/Technologies';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Navbar />
         <Hero />
         <About />
-        < Technologies />
+        <Technologies />
+        <Experience />
+        <Projects />
       </div>
     </div>
   );

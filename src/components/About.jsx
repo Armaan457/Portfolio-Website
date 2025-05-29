@@ -1,12 +1,12 @@
-import aboutImg from "../assets/about.png";
+import aboutImg from "../assets/AboutImage.png";
 import { ABOUT_TEXT } from "../data";
 import { motion } from "framer-motion";
 
 const About = () => {
     return (
         <div className="border-b border-neutral-900 pb-4">
-            <h2 className="my-20 text-center text-4xl text-neutral-400">
-                About <span className="text-neutral-500">Myself</span>
+            <h2 className="my-20 text-center text-4xl text-neutral-300">
+                About <span className="text-neutral-300">Myself</span>
             </h2>
             <motion.div 
                 whileInView={{ opacity: 1, x: 0 }}
@@ -25,7 +25,7 @@ const About = () => {
                 transition={{duration:0.5}}
                 className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:justify-start lg:items-center lg:h-full">
-                        <p className="my-2 max-w-xl py-6 text-neutral-400 text-xl">{ABOUT_TEXT}</p>
+                        <p className="my-2 max-w-xl py-6 text-neutral-200 text-xl">{ABOUT_TEXT}</p>
                     </div>
                 </motion.div>
             </motion.div>
