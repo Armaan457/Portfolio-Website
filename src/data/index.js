@@ -71,7 +71,7 @@ export const PROJECTS = [
     description:
       "Developed and deployed a personal portfolio website for showcasing projects, skills, and contact information using React, Tailwind CSS and Framer Motion",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    link: "https://github.com/Armaan457/Portfolio-website"
+    link: "https://portfolio-website-armaan-jagirdars-projects.vercel.app/"
   },
   {
     title: "StockSense",
@@ -90,3 +90,8 @@ export const PROJECTS = [
     link: "https://github.com/Armaan457/NavSight"
   },
 ];
+
+export const CONTACT = {
+  message: "Made with ❤️ by Armaan Jagirdar",
+  email: "armaanjagirdar05@gmail.com",
+};
