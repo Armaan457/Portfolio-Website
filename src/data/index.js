@@ -15,7 +15,7 @@ export const EXPERIENCES = [
     role: "AI Developer Intern",
     company: "Forage AI",
     description: `Worked with Large Language Models and MultiModal Models to develop automated solutions and workflows for data extraction and analysis.`,
-    technologies: ["Large Language Models", "MultiModal AI", "Streamlit", "Web Extraction"],
+    technologies: ["Large Language Models", "MultiModal AI", "Computer Vision", "Web Extraction"],
   },
   {
     year: "March 2025 - Present",

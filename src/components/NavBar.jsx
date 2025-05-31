@@ -16,7 +16,7 @@ const Navbar = () => {
                 <a href="https://github.com/Armaan457" target="_blank" rel="noopener noreferrer">
                     <FaGithub />
                 </a>
-                <a href="https://drive.google.com/file/d/1__q1nisYSD4wnSV4cbtqJ1VFFrS58seR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1cprLdbEc4cXfcc2nwgR4PaUERmYjarVP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <PiReadCvLogoBold />
                 </a>
            </div>

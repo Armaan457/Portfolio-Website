@@ -19,7 +19,9 @@ const Contacts = () => {
                     transition={{ duration: 1 }}
                     className="my-4"
                 >
-                    {CONTACT.email}
+                <a href={`mailto:${CONTACT.email}`} className="underline hover:text-neutral-200 transition-colors">
+                {CONTACT.email}
+                </a>
                 </motion.p>
                 <motion.p
                 whileInView={{ opacity: 1, y: 0 }}
