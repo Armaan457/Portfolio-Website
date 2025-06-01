@@ -10,13 +10,13 @@ const Navbar = () => {
                 <img className="mx-2 w-20 cursor-pointer" src={logo} alt="logo"/>
             </div>
             <div className='m-8 flex items-center justify-center gap-4 text-3xl'>
-                <a href="https://www.linkedin.com/in/armaan-jagirdar-183b47285/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/armaan-jagirdar-183b47285/" target="_blank" rel="noopener noreferrer" className='transition-transform duration-200 hover:-translate-y-2'>
                     <FaLinkedin />
                 </a>
-                <a href="https://github.com/Armaan457" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Armaan457" target="_blank" rel="noopener noreferrer" className='transition-transform duration-200 hover:-translate-y-2'>
                     <FaGithub />
                 </a>
-                <a href="https://drive.google.com/file/d/1cprLdbEc4cXfcc2nwgR4PaUERmYjarVP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1cprLdbEc4cXfcc2nwgR4PaUERmYjarVP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='transition-transform duration-200 hover:-translate-y-2'>
                     <PiReadCvLogoBold />
                 </a>
            </div>

@@ -21,14 +21,15 @@ const Projects = () => {
                         href={ project.link }
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="block"
+                        className="block group"
                     >
 
                     <img src={project.image}
                      width={220}
                      height={220}
                      alt={project.title} 
-                     className="mb-6 rounded"/>
+                     className="mb-6 rounded border-none transition-all duration-300 group-hover:shadow-[0_0_48px_16px_rgba(126,34,206,0.35)]"
+                    />
                      </a>
                     </motion.div>
                 <motion.div 
