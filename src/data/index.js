@@ -1,7 +1,6 @@
 import project1 from "../assets/Projects/project-1.png";
 import project2 from "../assets/Projects/project-2.png";
 import project3 from "../assets/Projects/project-3.png";
-import project4 from "../assets/Projects/project-4.png";
 import project5 from "../assets/Projects/project-5.png";
 import project6 from "../assets/Projects/project-6.png";
 
@@ -11,14 +10,14 @@ export const ABOUT_TEXT = `I am a second year Computer Engineering student at Th
 
 export const EXPERIENCES = [
   {
-    year: "March 2025 - Present",
+    year: "March 2025 - August 2025",
     role: "AI Developer Intern",
     company: "Forage AI",
-    description: `Worked with Large Language Models and MultiModal Models to develop automated solutions and workflows for data extraction and analysis.`,
-    technologies: ["Large Language Models", "MultiModal AI", "Computer Vision", "Web Extraction"],
+    description: `Developed custom models and retrieval systems for various internal use cases as well as worked on various automated agentic extraction and analysis workflows ensuring production readiness`,
+    technologies: ["AI Agents", "MultiModal AI", "NLP", "Computer Vision"],
   },
   {
-    year: "March 2025 - Present",
+    year: "March 2025 - June 2025",
     role: "Backend Developer",
     company: "Valency Energy",
     description: `Implemented robust backend solutions for the development of custom agents for customers and vendors in the field of solar components`,
@@ -62,16 +61,8 @@ export const PROJECTS = [
     image: project3,
     description:
       "Implemented an Agentic system using LangGraph and Gemini to scan user code for vulnerabilities and reccommend solutions for them enhanced by parallel processing.",
-    technologies: ["LangGraph", "FastAPI", "React"],
-    link: "https://github.com/Armaan457/SecureCodeAuditor-Agents_and_Backend"
-  },
-  {
-    title: "Portfolio Website",
-    image: project4,
-    description:
-      "Developed and deployed a personal portfolio website for showcasing projects, experience, and skills using React, Tailwind CSS and Framer Motion",
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    link: "https://armaanjagirdar-portfolio.vercel.app/"
+    technologies: ["LangGraph", "FastAPI", "React", "Docker"],
+    link: "https://github.com/Armaan457/SecureCodeAuditor"
   },
   {
     title: "StockSense",

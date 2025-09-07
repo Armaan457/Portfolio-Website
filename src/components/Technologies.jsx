@@ -6,9 +6,12 @@ import { SiTensorflow } from "react-icons/si";
 import { SiPytorch } from "react-icons/si";
 import { SiHuggingface } from "react-icons/si";
 import { SiLangchain } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { SiMlflow } from "react-icons/si";
 import crewailogo from "../assets/Technologies/crewaiLogo.png";
 import langgraphlogo from "../assets/Technologies/langgraphLogo.png";
 import sklearnlogo from "../assets/Technologies/sklearnLogo.png";
+import dvclogo from "../assets/Technologies/dvcLogo.png";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -29,7 +32,7 @@ const Technologies = () => {
         <div className="border-b border-neutral-800 pb-24">
             <motion.h2 
             whileInView={{opacity:1, y:0}}
-            inital={{opacity:0, y:-100}}
+            initial={{opacity:0, y:-100}}
             transition={{duration:1.5}}
             className="my-20 text-center text-4xl text-neutral-300">Technologies</motion.h2>
             <motion.div
@@ -127,6 +130,34 @@ const Technologies = () => {
                 >
                     <SiDjango className="text-7xl text-green-700" />
                 </motion.div>
+
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4"
+                >
+                    <FaDocker className="text-7xl text-blue-500" />
+                </motion.div>
+
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4"
+                >
+                    <SiMlflow className="text-7xl text-blue-400" />
+                </motion.div>
+
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center"
+                >
+                    <img src={ dvclogo } alt="DVC Logo" className="w-20 h-20 object-contain" />
+                </motion.div>
+
             </motion.div>
         </div>
     );
