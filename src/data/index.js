@@ -64,22 +64,21 @@ export const PROJECTS = [
     technologies: ["LangGraph", "FastAPI", "React", "Docker"],
     link: "https://github.com/Armaan457/SecureCodeAuditor"
   },
+    {
+    title: "NeuroCred",
+    image: project5,
+    description: "Built an AI-driven financial insights, loan prediction, and credit scoring system with explainability, while designing the backend architecture and managing end-to-end MLOps.",
+    technologies: ["FastAPI", "TensorFlow", "SHAP", "LangChain", "MLflow", "DVC"],
+    link: "https://github.com/Armaan457/NeuroCred"
+  },
   {
     title: "StockSense",
-    image: project5,
+    image: project6,
     description:
       "Built and deployed a comprehensive web application using Streamlit that provide insights into stock market trends, predict future prices, recommend similar stocks, and detect anomalies in stock behavior.",
     technologies: ["TensorFlow", "Scikit-learn", "Streamlit"],
     link: "https://a2-stocksense.streamlit.app/"
-  },
-  {
-    title: "NavSight",
-    image: project6,
-    description:
-      "Developed an voice controlled, AI powered assistive tool for the visually impaired integrating YOLOv9 and BLIP (Transformers) with Django and the frontend using AJAX.",
-    technologies: ["Django", "YOLO", "Transformers", "HTML/CSS"],
-    link: "https://github.com/Armaan457/NavSight"
-  },
+  }
 ];
 
 export const CONTACT = {
