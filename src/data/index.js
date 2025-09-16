@@ -68,7 +68,7 @@ export const PROJECTS = [
     title: "NeuroCred",
     image: project5,
     description: "Built an AI-driven financial insights, loan prediction, and credit scoring system with explainability, while designing the backend architecture and managing end-to-end MLOps.",
-    technologies: ["FastAPI", "TensorFlow", "SHAP", "LangChain", "MLflow", "DVC"],
+    technologies: ["FastAPI", "Scikit-learn", "SHAP", "LangChain", "MLflow", "DVC"],
     link: "https://github.com/Armaan457/NeuroCred"
   },
   {
