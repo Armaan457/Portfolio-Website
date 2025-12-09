@@ -16,7 +16,7 @@ const Navbar = () => {
                 <a href="https://github.com/Armaan457" target="_blank" rel="noopener noreferrer" className='transition-transform duration-200 hover:-translate-y-2'>
                     <FaGithub />
                 </a>
-                <a href="https://drive.google.com/file/d/1nvWxzIczKHXRFTlJvUn_1sZEhm9CJHN9/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='transition-transform duration-200 hover:-translate-y-2'>
+                <a href="https://drive.google.com/file/d/1t_lH_56KcU4vM2E5y8oiT4mygb4UBEov/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className='transition-transform duration-200 hover:-translate-y-2'>
                     <PiReadCvLogoBold />
                 </a>
            </div>
