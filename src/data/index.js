@@ -2,6 +2,10 @@ import project1 from "../assets/Projects/project-1.png";
 import project2 from "../assets/Projects/project-2.png";
 import project3 from "../assets/Projects/project-3.png";
 import project5 from "../assets/Projects/project-5.png";
+import drdo from "../assets/Experience/drdoLogo.png";
+import forageai from "../assets/Experience/forageaiLogo.png";
+import valency from "../assets/Experience/valencyLogo.png";
+import deradh from "../assets/Experience/deradhLogo.png";
 
 export const HERO_CONTENT = `I am a passionate AI/ML and Full Stack Developer that enjoys working on impactful projects that challenge my limits, enhance user experience, and drive business growth. My interests also extend to research, particularly in the field of Computer Vision, Large Language Models and Multimodal AI. `;
 
@@ -10,10 +14,11 @@ export const ABOUT_TEXT = `I am a third year Computer Engineering student at Tha
 export const EXPERIENCES = [
   {
     year: "June 2025 - Present",
-    role: "Research Intern",
+    role: "AI Intern",
     company: "Centre for Artificial Intelligence and Robotics, DRDO",
-    description: "Researching and developing advanced cyber-threat analysis systems, leveraging graph databases and agentic RAG architectures to improve knowledge representation and autonomous reasoning.",
-    technologies: ["Graph Databases", "RAG", "LLMs", "LangGraph"]
+    description: "Researching and developing advanced cyber-threat analysis systems, utilising graph databases and agentic RAG architectures to improve knowledge representation and autonomous reasoning.",
+    technologies: ["Graph Databases", "RAG", "LLMs", "LangGraph"],
+    logo: drdo
 
   },
   {
@@ -22,6 +27,7 @@ export const EXPERIENCES = [
     company: "Forage AI",
     description: `Developed deep learning based vision models and retrieval systems for various internal use cases as well as worked on various automated agentic extraction and analysis workflows ensuring production readiness`,
     technologies: ["CrewAI", "MultiModal AI", "NLP", "Computer Vision"],
+    logo: forageai
   },
   {
     year: "March 2025 - June 2025",
@@ -29,6 +35,7 @@ export const EXPERIENCES = [
     company: "Valency Energy",
     description: `Engineered robust backend solutions for the development of custom agents for customers and vendors in the field of solar components`,
     technologies: ["FastAPI", "MongoDB", "OAuth 2.0", "GCP"],
+    logo: valency
   },
   {
     year: "August 2024 - December 2024",
@@ -36,6 +43,7 @@ export const EXPERIENCES = [
     company: "Deradh",
     description: `Worked on the development and optimization of the virtual try on feature, exploring models such as Diffusion and GANs.`,
     technologies: ["Diffusion Models", "Generative Adversarial Networks", "Flask"],
+    logo: deradh
   },
   // {
   //   year: "June 2024 - July 2024",
@@ -51,7 +59,7 @@ export const PROJECTS = [
     title: "StockPulse",
     image: project1,
     description:
-      "Developed AI agents using CrewAI platform for stock prices prediction and portfolio analysis along with a conversational agent using LangChain, assisting in it's integration with the backend",
+      "Developed AI agents using CrewAI for stock prices prediction and portfolio analysis along with a conversational chatbot using LangChain for trading and finances, integrating it with the backend.",
     technologies: ["CrewAI", "LangChain", "Django REST", "React", "SQLite"],
     link: "https://github.com/Armaan457/StockPulse"
   },
@@ -66,7 +74,7 @@ export const PROJECTS = [
     title: "SecureCodeAuditor",
     image: project3,
     description:
-      "Implemented an Agentic system using LangGraph and Gemini to scan user code for vulnerabilities and reccommend solutions for them enhanced by parallel processing.",
+      "Implemented an scalable agentic code auditing system using LangGraph and Gemini to scan user code for vulnerabilities and reccommend solutions for them.",
     technologies: ["LangGraph", "FastAPI", "React", "Docker"],
     link: "https://github.com/Armaan457/SecureCodeAuditor"
   },
