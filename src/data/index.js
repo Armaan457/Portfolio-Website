@@ -20,7 +20,7 @@ export const EXPERIENCES = [
     year: "June 2025 - Present",
     role: "AI Intern",
     company: "Centre for Artificial Intelligence and Robotics, DRDO",
-    description: "Researching and developing advanced cyber-threat analysis systems, utilising graph databases and agentic RAG architectures to improve knowledge representation and autonomous reasoning.",
+    description: "Researching and developing advanced cyber threat analysis systems, utilising graph databases and agentic RAG architectures to improve knowledge representation and autonomous reasoning.",
     technologies: ["Graph Databases", "RAG", "LLMs", "LangGraph"],
     logo: drdo
 
@@ -29,7 +29,7 @@ export const EXPERIENCES = [
     year: "March 2025 - August 2025",
     role: "AI Developer Intern",
     company: "Forage AI",
-    description: `Developed deep learning based vision models and retrieval systems for various internal use cases as well as worked on various automated agentic extraction and analysis workflows ensuring production readiness`,
+    description: `Developed deep learning based vision models and retrieval systems for improving internal document intelligence. Also worked on various automated agentic extraction and analysis workflows ensuring production readiness`,
     technologies: ["CrewAI", "MultiModal AI", "NLP", "Computer Vision"],
     logo: forageai
   },
@@ -37,7 +37,7 @@ export const EXPERIENCES = [
     year: "March 2025 - June 2025",
     role: "Backend Developer",
     company: "Valency Energy",
-    description: `Engineered robust backend solutions for the development of custom agents for customers and vendors in the field of solar components`,
+    description: `Engineered robust RESTful APIs for the development of customer and vendor facing agents in the field of solar components. Also integrated Google Authentication for secure user access and management.`,
     technologies: ["FastAPI", "MongoDB", "OAuth 2.0", "GCP"],
     logo: valency
   },
@@ -45,7 +45,7 @@ export const EXPERIENCES = [
     year: "August 2024 - December 2024",
     role: "AI/ML Development Intern",
     company: "Deradh",
-    description: `Worked on the development and optimization of the virtual try on feature, exploring models such as Diffusion and GANs.`,
+    description: `Worked on the development and optimization of the virtual try on feature, implementing and fine tuning models such as Diffusion and GANs.`,
     technologies: ["Diffusion Models", "Generative Adversarial Networks", "Flask"],
     logo: deradh
   },
