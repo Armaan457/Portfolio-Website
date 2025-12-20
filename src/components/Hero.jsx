@@ -26,18 +26,16 @@ const Hero = () => {
                 Armaan Jagirdar
             </motion.h1>
 
-            <motion.div
+            <motion.span
                 variants={container(0.15)}
                 initial="hidden"
                 animate="visible"
-                className="inline-block"
+                className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/20 mb-6 inline-block self-start"
             >
-                <span className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/20 mb-6 inline-block">
-                    <span className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-400 bg-clip-text text-transparent font-semibold">
-                        AI/ML • Research • DSA • Full Stack
-                    </span>
+                <span className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-400 bg-clip-text text-transparent font-semibold text-sm sm:text-base">
+                    AI/ML • Research • DSA • Full Stack
                 </span>
-            </motion.div>
+            </motion.span>
 
             <motion.p 
                          variants={container(0.3)}

@@ -30,7 +30,7 @@ const Projects = () => {
                     {/* Gradient background */}
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-30 transition duration-500 -z-10"></div>
                     
-                    <div className="flex flex-col lg:flex-row gap-4 p-4 rounded-lg border border-neutral-700 hover:border-purple-500 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300">
+                    <div className="flex flex-col lg:flex-row gap-4 p-4 rounded-lg border border-neutral-700 hover:border-purple-300 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300">
                         {/* Image Section */}
                         <motion.div 
                         className="w-full lg:w-2/5 flex-shrink-0">

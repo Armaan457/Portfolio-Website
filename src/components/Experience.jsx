@@ -36,7 +36,7 @@ const Experience = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         initial={{ opacity: 0, scale: 0.95 }}
                         transition={{ type: "tween", ease: "linear", duration: 0.28 }}
-                        className="w-full lg:w-1/4 transform-gpu">
+                        className="w-full lg:w-1/4 mb-4 lg:mb-0 transform-gpu">
                             <div className="flex items-center gap-4">
                                 <div className="hidden lg:block relative">
                                     <div className="w-6 h-6 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full border-4 border-neutral-950"></div>
