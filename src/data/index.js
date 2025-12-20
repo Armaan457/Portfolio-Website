@@ -6,6 +6,10 @@ import drdo from "../assets/Experience/drdoLogo.png";
 import forageai from "../assets/Experience/forageaiLogo.png";
 import valency from "../assets/Experience/valencyLogo.png";
 import deradh from "../assets/Experience/deradhLogo.png";
+import sih from "../assets/Achievements/sihLogo.png";
+import bwave from "../assets/Achievements/bwaveLogo.png";
+import acm from "../assets/Achievements/acmLogo.png";
+import howasp from "../assets/Achievements/howaspLogo.png";
 
 export const HERO_CONTENT = `I am a passionate AI/ML and Full Stack Developer that enjoys working on impactful projects that challenge my limits, enhance user experience, and drive business growth. My interests also extend to research, particularly in the field of Computer Vision, Large Language Models and Multimodal AI. `;
 
@@ -85,6 +89,33 @@ export const PROJECTS = [
       "Built a RAG powered research engine for commercial courts using LangChain, integrated with Pinecone as the vector database. Implemented prior case retrieval, legal statute identification and court judgement prediction with explaination.",
     technologies: ["LangChain", "NLTK", "React", "Express", "Django REST", "Pinecone", "MongoDB"],
     link: "https://github.com/Armaan457/LawVista"
+  },
+];
+
+export const ACHIEVEMENTS = [
+  {
+    title: "Smart India Hackathon 2024 Finalist",
+    image: sih,
+    date: "December 2024",
+    description: "Secured a finalist position at India's largest national level hackathon, competing against thousands of teams by developing an AI-powered Research Engine for commercial courts."
+  },
+  {
+    title: "Runner up in the ML Trading track at DTU brAInwave Hackathon",
+    image: bwave,
+    date: "October 2024",
+    description: "Achieved runner-up position in the Machine Learning Trading track competing with 2000+ teams accross India by building an AI driven stocks prediction and portfolio analysis platform."
+  },
+  {
+    title: "General Secretary, ACM Thapar Student Chapter",
+    image: acm, 
+    date: "August 2025",
+    description: "Appointed to the top student leadership role in one of the university's largest technical society and part of the international ACM community."
+  },
+  {
+    title: "Best First Year Hack at HackOwasp 6.0",  
+    image: howasp, 
+    date: "April 2024",
+    description: "Won the Best First Year Hack award by amongst 40+ teams developing a AI powered mental health support platform."
   },
 ];
 
