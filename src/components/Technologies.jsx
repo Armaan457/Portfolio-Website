@@ -9,6 +9,7 @@ import { SiLangchain } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 import { SiMlflow } from "react-icons/si";
 import { SiNeo4J } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import crewailogo from "../assets/Technologies/crewaiLogo.png";
 import langgraphlogo from "../assets/Technologies/langgraphLogo.png";
 import sklearnlogo from "../assets/Technologies/sklearnLogo.png";
@@ -104,6 +105,7 @@ const Technologies = () => {
                     <TechCard label="React"><RiReactjsLine className="text-7xl text-cyan-400" /></TechCard>
                     <TechCard label="FastAPI"><SiFastapi className="text-7xl text-green-500" /></TechCard>
                     <TechCard label="Django"><SiDjango className="text-7xl text-green-700" /></TechCard>
+                    <TechCard label="PostgreSQL"><BiLogoPostgresql className="text-7xl text-blue-600" /></TechCard>
                     <TechCard label="MongoDB"><SiMongodb className="text-7xl text-green-500" /></TechCard>
                     <TechCard label="Neo4j"><SiNeo4J className="text-7xl text-blue-400" /></TechCard>
                     <TechCard label="Pinecone"><img src={pinecone} alt="Pinecone" className="w-20 h-20 object-contain" /></TechCard>
