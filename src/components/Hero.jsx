@@ -33,7 +33,7 @@ const Hero = () => {
                 className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/20 mb-6 inline-block self-start"
             >
                 <span className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-400 bg-clip-text text-transparent font-semibold text-sm sm:text-base">
-                    AI/ML • Research • DSA • Full Stack
+                    Deep Learning • Agentic AI • Backend • MLOps • DSA
                 </span>
             </motion.span>
 

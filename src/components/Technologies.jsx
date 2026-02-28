@@ -16,6 +16,7 @@ import sklearnlogo from "../assets/Technologies/sklearnLogo.png";
 import dvclogo from "../assets/Technologies/dvcLogo.png";
 import gcp from "../assets/Technologies/gcpLogo.png";
 import pinecone from "../assets/Technologies/pineconeLogo.png";
+import autogenlogo from "../assets/Technologies/autogenLogo.png";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -86,6 +87,7 @@ const Technologies = () => {
                     <TechCard label="LangChain"><SiLangchain className="text-7xl text-green-600" /></TechCard>
                     <TechCard label="LangGraph"><img src={langgraphlogo} alt="LangGraph" className="w-20 h-20 object-contain" /></TechCard>
                     <TechCard label="CrewAI"><img src={crewailogo} alt="CrewAI" className="w-20 h-20 object-contain" /></TechCard>
+                    <TechCard label="AutoGen"><img src={autogenlogo} alt="AutoGen" className="w-20 h-20 object-contain" /></TechCard>
                 </motion.div>
             </motion.div>
 

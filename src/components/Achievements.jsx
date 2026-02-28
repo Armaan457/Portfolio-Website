@@ -38,7 +38,7 @@ const Achievements = () => {
                                 <img 
                                     src={achievement.image}
                                     alt={achievement.title} 
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                    className="w-full h-full object-contain p-3 transition-transform duration-300"
                                 />
                                 {/* Trophy Icon Overlay */}
                                 <div className="absolute top-3 right-3 bg-purple-600/80 backdrop-blur-sm p-2 rounded-full">

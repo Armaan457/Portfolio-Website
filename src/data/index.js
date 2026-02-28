@@ -10,14 +10,16 @@ import sih from "../assets/Achievements/sihLogo.png";
 import bwave from "../assets/Achievements/bwaveLogo.png";
 import acm from "../assets/Achievements/acmLogo.png";
 import howasp from "../assets/Achievements/howaspLogo.png";
+import dsai from "../assets/Achievements/dsaiLogo.png";
+import tiet from "../assets/Achievements/tietLogo.png";
 
-export const HERO_CONTENT = `I am a passionate AI/ML and Full Stack Developer that enjoys working on impactful projects that challenge my limits, enhance user experience, and drive business growth. My interests also extend to research, particularly in the field of Computer Vision, Large Language Models and Multimodal AI. `;
+export const HERO_CONTENT = `I am a passionate AI/ML and Backend Engineer that enjoys working on impactful projects that challenge my limits, enhance user experience, and drive business growth. My interests also extend to research, particularly in the field of Computer Vision, Large Language Models and Multimodal AI. `;
 
 export const ABOUT_TEXT = `I am a third year Computer Engineering student at Thapar Institute of Engineering and Technology, passionate about Artificial Intelligence, Machine Learning, and their real world applications. I actively participate and organise hackathons and technical events. My experience spans Classical Machine Learning, Time Series Forcasting, Natural Language Processing (NLP), Large Language Models, Computer Vision, Multimodal AI, Generative and Agentic AI, as well as backend development with Django and FastAPI, and frontend development using React. I strive to build impactful projects that blend innovation with practical utility.`;
 
 export const EXPERIENCES = [
   {
-    year: "June 2025 - Present",
+    year: "June 2025 - January 2026",
     role: "AI Intern",
     company: "Centre for Artificial Intelligence and Robotics, DRDO",
     description: "Researching and developing advanced cyber threat analysis systems, utilising graph databases and agentic RAG architectures to improve knowledge representation and autonomous reasoning.",
@@ -82,14 +84,6 @@ export const PROJECTS = [
     technologies: ["LangGraph", "FastAPI", "React", "Docker"],
     link: "https://github.com/Armaan457/SecureCodeAuditor"
   },
-  {
-    title: "LawVista",
-    image: project2,
-    description:
-      "Built a RAG powered research engine for commercial courts using LangChain, integrated with Pinecone as the vector database. Implemented prior case retrieval, legal statute identification and court judgement prediction with explaination.",
-    technologies: ["LangChain", "NLTK", "React", "Express", "Django REST", "Pinecone", "MongoDB"],
-    link: "https://github.com/Armaan457/LawVista"
-  },
 ];
 
 export const ACHIEVEMENTS = [
@@ -104,6 +98,18 @@ export const ACHIEVEMENTS = [
     image: bwave,
     date: "October 2024",
     description: "Achieved runner-up position in the Machine Learning Trading track competing with 2000+ teams accross India by building an AI driven stocks prediction and portfolio analysis platform."
+  },
+  {
+    title: "Undergraduate Research Fellowship by Thapar Institute of Engineering and Technology",
+    image: tiet,
+    date: "February 2026",
+    description: "Awarded the prestigious Undergraduate Research Fellowship at Thapar Institute of Engineering and Technology, selected among only 100 students across the entire college for my research project under Dr Amrita Kaur."
+  },
+  {
+    title: "Technical Lead, Center of Excellence in Data Science and Artificial Intelligence, TIET",
+    image: dsai,
+    date: "November 2025",
+    description: "Selected as one of the tech leads of the Center of Excellence in Data Science and Artificial Intelligence at Thapar Institute of Engineering and Technology, overseeing various projects and event initiatives."
   },
   {
     title: "General Secretary, ACM Thapar Student Chapter",
