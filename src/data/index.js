@@ -19,7 +19,7 @@ export const ABOUT_TEXT = `I am a third year Computer Engineering student at Tha
 
 export const EXPERIENCES = [
   {
-    year: "June 2025 - January 2026",
+    year: "June 2025 - November 2025",
     role: "AI Intern",
     company: "Centre for Artificial Intelligence and Robotics, DRDO",
     description: "Researching and developing advanced cyber threat analysis systems, utilising graph databases and agentic RAG architectures to improve knowledge representation and autonomous reasoning.",
