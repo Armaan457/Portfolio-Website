@@ -59,7 +59,15 @@ const Projects = () => {
                                 >
                                     {project.title}
                                 </motion.h6>
-                                <p className="mb-4 text-neutral-300 leading-relaxed text-base">{project.description}</p>
+                                {Array.isArray(project.description) ? (
+                                    <ul className="mb-4 text-neutral-300 leading-relaxed text-base list-disc ml-5">
+                                        {project.description.map((line, i) => (
+                                            <li key={i} className="mb-1">{line}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <p className="mb-4 text-neutral-300 leading-relaxed text-base">{project.description}</p>
+                                )}
                             </div>
 
                             {/* Technologies */}
@@ -76,7 +84,19 @@ const Projects = () => {
                             </div>
 
                             {/* CTA Button */}
-                            <motion.div className="mt-4">
+                            <motion.div className="mt-4 flex items-center gap-3">
+                                {project.live ? (
+                                    <a
+                                        href={project.live}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold text-sm hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 transform hover:scale-105"
+                                    >
+                                        Live Site
+                                        <FaExternalLinkAlt className="text-xs" />
+                                    </a>
+                                ) : null}
+
                                 <a 
                                     href={project.link}
                                     target="_blank" 

@@ -82,7 +82,15 @@ const Experience = () => {
                                         )}
                                     </div>
                                 </div>
-                                <p className="mb-4 text-neutral-300 leading-relaxed text-base">{experience.description}</p>
+                                {Array.isArray(experience.description) ? (
+                                    <ul className="mb-4 text-neutral-300 leading-relaxed text-base list-disc ml-5">
+                                        {experience.description.map((line, i) => (
+                                            <li key={i} className="mb-1">{line}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <p className="mb-4 text-neutral-300 leading-relaxed text-base">{experience.description}</p>
+                                )}
                                 <div className="flex flex-wrap gap-2">
                                     {experience.technologies.map((tech, techIndex) => (
                                         <motion.span 

@@ -22,8 +22,11 @@ export const EXPERIENCES = [
     year: "June 2025 - November 2025",
     role: "AI Intern",
     company: "Centre for Artificial Intelligence and Robotics, DRDO",
-    description: "Researching and developing advanced cyber threat analysis systems, utilising graph databases and agentic RAG architectures to improve knowledge representation and autonomous reasoning.",
-    technologies: ["Graph Databases", "RAG", "LLMs", "LangGraph"],
+    description: [
+      "Built a robust multi-step GraphRAG framework over a cyber threat intelligence database with an explainable evaluation system.",
+      "Developed agentic pipelines using LangGraph and AutoGen for autonomous analysis and structured reasoning."
+    ],
+    technologies: ["Graph Databases", "RAG", "AutoGen", "LangGraph", "LLMs"],
     logo: drdo
 
   },
@@ -31,15 +34,23 @@ export const EXPERIENCES = [
     year: "March 2025 - August 2025",
     role: "AI Developer Intern",
     company: "Forage AI",
-    description: `Developed deep learning based vision models and retrieval systems for improving internal document intelligence. Also worked on various automated agentic extraction and analysis workflows ensuring production readiness`,
-    technologies: ["CrewAI", "MultiModal AI", "NLP", "Computer Vision"],
+    description: [
+      "Developed highly accurate custom deep learning based vision models to streamline and enhance document workflows.",
+      "Collaboratively implemented production grade automated multimodal, multi agent workflows to streamline data extraction and analysis, significantly improving accuracy.",
+      "Explored multimodal RAG pipelines for accurate and efficient information extraction.",
+      "Gained hands on experience collaborating across fast paced, cross functional teams."
+    ],
+    technologies: ["CrewAI", "MultiModal AI", "NLP", "Computer Vision", "AWS"],
     logo: forageai
   },
   {
     year: "March 2025 - June 2025",
     role: "Backend Developer",
     company: "Valency Energy",
-    description: `Engineered robust RESTful APIs for the development of customer and vendor facing agents in the field of solar components. Also integrated Google Authentication for secure user access and management.`,
+    description: [
+      "Partnered in designing and implementing scalable RESTful APIs to support customer and vendor facing agents in the solar energy components sector, ensuring high performance and reliability.",
+      "Integrated role based Google Authentication for enhancing system security and streamlining user workflows."
+    ],
     technologies: ["FastAPI", "MongoDB", "OAuth 2.0", "GCP"],
     logo: valency
   },
@@ -47,42 +58,47 @@ export const EXPERIENCES = [
     year: "August 2024 - December 2024",
     role: "AI/ML Development Intern",
     company: "Deradh",
-    description: `Worked on the development and optimization of the virtual try on feature, implementing and fine tuning models such as Diffusion and GANs.`,
+    description: [
+      "Implemented and optimized the company’s virtual try on feature through collaborative R&D, exploring state of the art models like Diffusion Models and GANs for greater realism and performance"
+    ],
     technologies: ["Diffusion Models", "Generative Adversarial Networks", "Flask"],
     logo: deradh
   },
-  // {
-  //   year: "June 2024 - July 2024",
-  //   role: "ELC Summer Intern",
-  //   company: "Thapar Institute of Engineering and Technology",
-  //   description: `Collaborated on the development of a Motorcycle helmet detection and warning system, along with vehicle speed estimation, deployed using Jetson Nano and motion cameras.`,
-  //   technologies: ["Object Detection", "Object Tracking", "Image Recognition"],
-  // },
 ];
 
 export const PROJECTS = [
   {
     title: "StockPulse",
     image: project1,
-    description:
-      "Developed AI agents using CrewAI for stock prices prediction and portfolio analysis along with a conversational chatbot using LangChain for trading and finances, integrating it with the backend.",
-    technologies: ["CrewAI", "LangChain", "Django REST", "React", "SQLite"],
-    link: "https://github.com/Armaan457/StockPulse"
+    description: [
+      "Developed multi AI agent systems using CrewAI for stock price prediction and portfolio analysis, integrating them with the backend and databases.",
+      "Built a conversational RAG powered chatbot using LangChain, providing personalized trading insights with minimal response latency"
+    ],
+    technologies: ["CrewAI", "LangChain", "CrewAI", "Django REST", "Next", "PostgreSQL", "Pinecone"],
+    link: "https://github.com/Armaan457/StockPulse",
+    live: ""
   },
   {
     title: "NeuroCred",
     image: project5,
-    description: "Built an AI-driven financial insights, loan prediction, and credit scoring system with explainability, while designing the backend architecture and managing end-to-end MLOps.",
+    description: [
+      "Built the AI and backend infrastructure for a fintech platform delivering intelligent financial insights, including loan approval prediction, CIBIL score estimation with improvement recommendations, and an AI-powered finance chatbot utilising vector search.",
+      "Integrated explainable AI (SHAP), MLflow-based experiment tracking, DVC for data versioning, and JWT authentication to ensure transparency and secure user access."
+    ],
     technologies: ["FastAPI", "Scikit-learn", "SHAP", "LangChain", "MLflow", "DVC"],
-    link: "https://github.com/Armaan457/NeuroCred"
+    link: "https://github.com/Armaan457/NeuroCred",
+    live: ""
   },
   {
     title: "SecureCodeAuditor",
     image: project3,
-    description:
-      "Implemented an scalable agentic code auditing system using LangGraph and Gemini to scan user code for vulnerabilities and reccommend solutions for them.",
+    description: [
+      "Engineered an agentic code auditing system leveraging LangGraph and Llama to perform comprehensive vulnerability detection and analysis.",
+      "Designed a high-performance backend with FastAPI with asynchronous processing and proper guardrails to ensure high quality outputs."
+    ],
     technologies: ["LangGraph", "FastAPI", "React", "Docker"],
-    link: "https://github.com/Armaan457/SecureCodeAuditor"
+    link: "https://github.com/Armaan457/SecureCodeAuditor",
+    live: "https://sca.armaanjagirdar.me/"
   },
 ];
 
