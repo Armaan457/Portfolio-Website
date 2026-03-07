@@ -84,13 +84,13 @@ const Projects = () => {
                             </div>
 
                             {/* CTA Button */}
-                            <motion.div className="mt-4 flex items-center gap-3">
+                            <motion.div className="mt-4 flex flex-wrap items-center gap-3">
                                 {project.live ? (
                                     <a
                                         href={project.live}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold text-sm hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 transform hover:scale-105"
+                                        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-600 text-neutral-100 font-semibold text-sm hover:bg-neutral-700 hover:border-neutral-500 hover:shadow-lg hover:shadow-neutral-500/30 transition-all duration-300 transform hover:scale-105"
                                     >
                                         Live Site
                                         <FaExternalLinkAlt className="text-xs" />
