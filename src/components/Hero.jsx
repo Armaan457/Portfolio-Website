@@ -51,7 +51,7 @@ const Hero = () => {
                 animate="visible"
                 className="flex gap-4 mt-8"
              >
-                <a href="https://drive.google.com/file/d/1t_lH_56KcU4vM2E5y8oiT4mygb4UBEov/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                <a href="https://drive.google.com/file/d/1-wYDIVrBgd3cLujMHLjAMDliEVdN_0r6/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105">
                     View My Work
                 </a>
                 <a href="#contact" className="px-8 py-3 rounded-lg border border-purple-500 text-purple-300 font-semibold hover:bg-purple-500/10 transition-all duration-300">
