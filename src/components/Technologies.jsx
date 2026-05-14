@@ -57,7 +57,7 @@ const Technologies = () => {
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -20 }}
-                transition={smoothEnter(0, 0.55)}
+                transition={smoothEnter(0, 0.9)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-20"
             >
@@ -71,7 +71,7 @@ const Technologies = () => {
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 16 }}
-                transition={smoothEnter(0.04, 0.5)}
+                transition={smoothEnter(0.18, 0.86)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="mb-12"
             >
@@ -95,7 +95,7 @@ const Technologies = () => {
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 16 }}
-                transition={smoothEnter(0.08, 0.5)}
+                transition={smoothEnter(0.26, 0.86)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="mb-12"
             >
@@ -118,7 +118,7 @@ const Technologies = () => {
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 16 }}
-                transition={smoothEnter(0.12, 0.5)}
+                transition={smoothEnter(0.34, 0.86)}
                 viewport={{ once: true, amount: 0.25 }}
             >
                 <h3 className="text-center text-lg font-semibold text-cyan-300 mb-8 flex items-center justify-center gap-2">

@@ -18,7 +18,7 @@ const Navbar = () => {
         <motion.nav 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={smoothEnter(0, 0.55)}
+            transition={smoothEnter(0, 0.9)}
             className="mb-20 flex items-center justify-between py-6"
         >
             <motion.div 

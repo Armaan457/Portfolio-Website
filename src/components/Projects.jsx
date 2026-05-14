@@ -8,7 +8,7 @@ const Projects = () => {
         <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -24 }}
-            transition={smoothEnter(0, 0.55)}
+            transition={smoothEnter(0, 0.9)}
             viewport={{ once: true, amount: 0.25 }}
             className="flex items-center justify-center gap-3 mb-20"
         >
@@ -24,7 +24,7 @@ const Projects = () => {
                     key={index}
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 20 }}
-                    transition={smoothEnter(index * 0.05, 0.56)}
+                    transition={smoothEnter(index * 0.1, 0.9)}
                     viewport={{ once: true, amount: 0.2 }}
                     className="group relative transform-gpu"
                 >

@@ -9,7 +9,7 @@ const About = () => {
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -40 }}
-                transition={smoothEnter(0, 0.58)}
+                transition={smoothEnter(0, 0.9)}
                 viewport={{ once: true, amount: 0.3 }}
                 className="flex items-center justify-center gap-3 mb-20"
             >
@@ -22,7 +22,7 @@ const About = () => {
             <motion.div 
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -56 }}
-                transition={smoothEnter(0.04, 0.58)}
+                transition={smoothEnter(0.18, 0.9)}
                 viewport={{ once: true, amount: 0.2 }}
                 className="flex flex-wrap lg:flex-nowrap gap-8"
             >
@@ -39,7 +39,7 @@ const About = () => {
                 <motion.div 
                 whileInView={{opacity:1, x:0}}
                 initial={{opacity:0, x:56}}
-                transition={smoothEnter(0.08, 0.58)}
+                transition={smoothEnter(0.24, 0.9)}
                 viewport={{ once: true, amount: 0.2 }}
                 className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:justify-start lg:items-center lg:h-full">

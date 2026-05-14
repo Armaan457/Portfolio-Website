@@ -7,7 +7,7 @@ import { smoothEnter } from "../utils/motion";
 const Contacts = () => {
     const [copied, setCopied] = useState(false);
 
-    const baseTransition = smoothEnter(0, 0.52);
+    const baseTransition = smoothEnter(0, 0.9);
 
     const handleCopyEmail = () => {
         navigator.clipboard.writeText(CONTACT.email);
@@ -35,7 +35,7 @@ const Contacts = () => {
                 <motion.p
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 10 }}
-                    transition={smoothEnter(0.05, 0.52)}
+                    transition={smoothEnter(0.18, 0.9)}
                     viewport={{ once: true, amount: 0.25 }}
                     className="text-neutral-300 text-xl text-center max-w-2xl leading-relaxed transform-gpu"
                 >
@@ -46,7 +46,7 @@ const Contacts = () => {
                 <motion.div
                     whileInView={{ opacity: 1, scale: 1 }}
                     initial={{ opacity: 0, scale: 0.98 }}
-                    transition={smoothEnter(0.1, 0.5)}
+                    transition={smoothEnter(0.24, 0.88)}
                     viewport={{ once: true, amount: 0.25 }}
                     className="relative group transform-gpu"
                 >
@@ -66,7 +66,7 @@ const Contacts = () => {
                 <motion.div
                     whileInView={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
-                    transition={smoothEnter(0.16, 0.48)}
+                    transition={smoothEnter(0.34, 0.86)}
                     viewport={{ once: true, amount: 0.25 }}
                     className="flex gap-6 transform-gpu"
                 >
@@ -94,7 +94,7 @@ const Contacts = () => {
                 <motion.p
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 8 }}
-                    transition={smoothEnter(0.2, 0.52)}
+                    transition={smoothEnter(0.38, 0.9)}
                     viewport={{ once: true, amount: 0.25 }}
                     className="text-center text-neutral-400 text-base pt-8 border-t border-neutral-800 w-full transform-gpu"
                 >
