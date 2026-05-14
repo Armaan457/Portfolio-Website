@@ -1,13 +1,14 @@
 import { PROJECTS } from "../data"
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { smoothEnter } from "../utils/motion";
 
 const Projects = () => {
     return (<div className="border-b border-neutral-800 pb-12" id="projects">
         <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -24 }}
-            transition={{ type: "tween", ease: "linear", duration: 0.3 }}
+            transition={smoothEnter(0, 0.55)}
             viewport={{ once: true, amount: 0.25 }}
             className="flex items-center justify-center gap-3 mb-20"
         >
@@ -22,8 +23,8 @@ const Projects = () => {
                 <motion.div 
                     key={index}
                     whileInView={{ opacity: 1, y: 0 }}
-                    initial={{ opacity: 0, y: 28 }}
-                    transition={{ type: "tween", ease: "linear", duration: 0.3, delay: index * 0.03 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    transition={smoothEnter(index * 0.05, 0.56)}
                     viewport={{ once: true, amount: 0.2 }}
                     className="group relative transform-gpu"
                 >

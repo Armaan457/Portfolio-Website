@@ -2,6 +2,7 @@ import logo from '../assets/Logo.png';
 import { FaLinkedin, FaGithub} from 'react-icons/fa';
 import { SiLeetcode } from "react-icons/si";
 import { motion } from 'framer-motion';
+import { smoothEnter } from '../utils/motion';
 
 const Navbar = () => {
     const navItems = [
@@ -17,7 +18,7 @@ const Navbar = () => {
         <motion.nav 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={smoothEnter(0, 0.55)}
             className="mb-20 flex items-center justify-between py-6"
         >
             <motion.div 

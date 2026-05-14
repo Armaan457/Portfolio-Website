@@ -74,7 +74,7 @@ export const PROJECTS = [
       "Developed multi AI agent systems using CrewAI for stock price prediction and portfolio analysis, integrating them with the backend and databases.",
       "Built a conversational RAG powered chatbot using LangChain, providing personalized trading insights with minimal response latency"
     ],
-    technologies: ["CrewAI", "LangChain", "CrewAI", "Django REST", "Next", "PostgreSQL", "Pinecone"],
+    technologies: ["CrewAI", "Django REST", "Websockets", "Next", "PostgreSQL"],
     link: "https://github.com/Armaan457/StockPulse",
     live: ""
   },
@@ -85,7 +85,7 @@ export const PROJECTS = [
       "Built the AI and backend infrastructure for a fintech platform delivering intelligent financial insights, including loan approval prediction, CIBIL score estimation with improvement recommendations, and an AI-powered finance chatbot utilising vector search.",
       "Integrated explainable AI (SHAP), MLflow-based experiment tracking, DVC for data versioning, and JWT authentication to ensure transparency and secure user access."
     ],
-    technologies: ["FastAPI", "Scikit-learn", "SHAP", "LangChain", "MLflow", "DVC"],
+    technologies: ["FastAPI", "Scikit-learn", "SHAP", "LangChain", "MLflow", "DVC", "Pinecone", "Next"],
     link: "https://github.com/Armaan457/NeuroCred",
     live: ""
   },
@@ -119,16 +119,16 @@ export const ACHIEVEMENTS = [
     title: "Undergraduate Research Fellowship by Thapar Institute of Engineering and Technology",
     image: tiet,
     date: "February 2026",
-    description: "Awarded the prestigious Undergraduate Research Fellowship at Thapar Institute of Engineering and Technology, selected among only 100 students across the entire college for my research project under Dr Amrita Kaur."
+    description: "Awarded the prestigious Undergraduate Research Fellowship at Thapar Institute of Engineering and Technology, selected among only 100 students across the entire college for my research project."
   },
   {
-    title: "Technical Lead, Center of Excellence in Data Science and Artificial Intelligence, TIET",
+    title: "Student Innovator: Overall Technical Coordinator, Center of Excellence in Data Science and Artificial Intelligence, TIET",
     image: dsai,
     date: "November 2025",
-    description: "Selected as one of the tech leads of the Center of Excellence in Data Science and Artificial Intelligence at Thapar Institute of Engineering and Technology, overseeing various projects and event initiatives."
+    description: "Selected as one of the Student Innovators of the Center of Excellence in Data Science and Artificial Intelligence at Thapar Institute of Engineering and Technology, overseeing various event initiatives."
   },
   {
-    title: "General Secretary, ACM Thapar Student Chapter",
+    title: "General Secretary, Association for Computing Machinery, Thapar Student Chapter",
     image: acm, 
     date: "August 2025",
     description: "Appointed to the top student leadership role in one of the university's largest technical society and part of the international ACM community."

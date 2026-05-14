@@ -18,6 +18,7 @@ import gcp from "../assets/Technologies/gcpLogo.png";
 import pinecone from "../assets/Technologies/pineconeLogo.png";
 import autogenlogo from "../assets/Technologies/autogenLogo.png";
 import { motion } from "framer-motion";
+import { smoothEnter } from "../utils/motion";
 
 const iconVariants = (duration) => ({
     initial: { y: -10 },
@@ -55,8 +56,8 @@ const Technologies = () => {
         <div className="border-b border-neutral-800 pb-24" id="technologies">
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -28 }}
-                transition={{ type: "tween", ease: "linear", duration: 0.3 }}
+                initial={{ opacity: 0, y: -20 }}
+                transition={smoothEnter(0, 0.55)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-20"
             >
@@ -70,7 +71,7 @@ const Technologies = () => {
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 16 }}
-                transition={{ type: "tween", ease: "linear", duration: 0.28 }}
+                transition={smoothEnter(0.04, 0.5)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="mb-12"
             >
@@ -94,7 +95,7 @@ const Technologies = () => {
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 16 }}
-                transition={{ type: "tween", ease: "linear", duration: 0.28, delay: 0.02 }}
+                transition={smoothEnter(0.08, 0.5)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="mb-12"
             >
@@ -117,7 +118,7 @@ const Technologies = () => {
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 16 }}
-                transition={{ type: "tween", ease: "linear", duration: 0.28, delay: 0.04 }}
+                transition={smoothEnter(0.12, 0.5)}
                 viewport={{ once: true, amount: 0.25 }}
             >
                 <h3 className="text-center text-lg font-semibold text-cyan-300 mb-8 flex items-center justify-center gap-2">

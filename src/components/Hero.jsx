@@ -1,13 +1,14 @@
 import { HERO_CONTENT } from "../data";
 import profilePic from "../assets/HeroImage.png";
 import {motion} from "framer-motion";
+import { smoothEnter } from "../utils/motion";
 
 const container = (delay) => ({
     hidden: { x: -80, opacity: 0 },
     visible: {
         x: 0,
         opacity: 1,
-        transition: { type: "tween", ease: "linear", duration: 0.35, delay },
+        transition: smoothEnter(delay),
     },
 });
 
@@ -65,7 +66,7 @@ const Hero = () => {
             <motion.div
                 initial={{ x: 80, opacity: 0, scale: 0.92 }}
                 animate={{ x: 0, opacity: 1, scale: 1 }}
-                transition={{ type: "tween", ease: "linear", duration: 0.35, delay: 0.2 }}
+                transition={smoothEnter(0.2)}
                 className="relative group w-11/12 max-w-[480px] transform-gpu"
             >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-20 group-hover:opacity-50 transition duration-1000"></div>

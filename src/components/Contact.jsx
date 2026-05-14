@@ -2,12 +2,12 @@ import { CONTACT } from "../data";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import { useState } from "react";
+import { smoothEnter } from "../utils/motion";
 
 const Contacts = () => {
     const [copied, setCopied] = useState(false);
 
-    // Shared linear tween for constant speed, no end acceleration
-    const baseTransition = { type: "tween", ease: "linear", duration: 0.28 };
+    const baseTransition = smoothEnter(0, 0.52);
 
     const handleCopyEmail = () => {
         navigator.clipboard.writeText(CONTACT.email);
@@ -34,8 +34,8 @@ const Contacts = () => {
             <div className="flex flex-col items-center space-y-8">
                 <motion.p
                     whileInView={{ opacity: 1, y: 0 }}
-                    initial={{ opacity: 0, y: 12 }}
-                    transition={{ ...baseTransition, delay: 0.02 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    transition={smoothEnter(0.05, 0.52)}
                     viewport={{ once: true, amount: 0.25 }}
                     className="text-neutral-300 text-xl text-center max-w-2xl leading-relaxed transform-gpu"
                 >
@@ -46,7 +46,7 @@ const Contacts = () => {
                 <motion.div
                     whileInView={{ opacity: 1, scale: 1 }}
                     initial={{ opacity: 0, scale: 0.98 }}
-                    transition={{ ...baseTransition, delay: 0.06 }}
+                    transition={smoothEnter(0.1, 0.5)}
                     viewport={{ once: true, amount: 0.25 }}
                     className="relative group transform-gpu"
                 >
@@ -66,7 +66,7 @@ const Contacts = () => {
                 <motion.div
                     whileInView={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
-                    transition={{ ...baseTransition, delay: 0.12 }}
+                    transition={smoothEnter(0.16, 0.48)}
                     viewport={{ once: true, amount: 0.25 }}
                     className="flex gap-6 transform-gpu"
                 >
@@ -93,8 +93,8 @@ const Contacts = () => {
                 {/* Message */}
                 <motion.p
                     whileInView={{ opacity: 1, y: 0 }}
-                    initial={{ opacity: 0, y: 10 }}
-                    transition={{ ...baseTransition, delay: 0.16 }}
+                    initial={{ opacity: 0, y: 8 }}
+                    transition={smoothEnter(0.2, 0.52)}
                     viewport={{ once: true, amount: 0.25 }}
                     className="text-center text-neutral-400 text-base pt-8 border-t border-neutral-800 w-full transform-gpu"
                 >
