@@ -31,7 +31,7 @@ const Hero = () => {
                 variants={container(0.15)}
                 initial="hidden"
                 animate="visible"
-                className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/20 mb-6 inline-block self-start"
+                className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/20 mb-6 inline-block self-center lg:self-start text-center"
             >
                 <span className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-400 bg-clip-text text-transparent font-semibold text-sm sm:text-base">
                     Deep Learning • Agentic AI • Backend • MLOps • DSA
@@ -52,7 +52,7 @@ const Hero = () => {
                 animate="visible"
                 className="flex gap-4 mt-8"
              >
-                <a href="https://drive.google.com/file/d/1y-_cdcT_9J_eDoDnAW4RVQ7ZZUjxpqOE/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                <a href="https://drive.google.com/file/d/1XQAkNVGbksAKVXuuLB4ZObBGKjWGIGbH/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105">
                     View My Work
                 </a>
                 <a href="#contact" className="px-8 py-3 rounded-lg border border-purple-500 text-purple-300 font-semibold hover:bg-purple-500/10 transition-all duration-300">
