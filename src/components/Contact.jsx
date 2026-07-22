@@ -39,7 +39,7 @@ const Contacts = () => {
                     viewport={{ once: true, amount: 0.25 }}
                     className="text-neutral-300 text-xl text-center max-w-2xl leading-relaxed transform-gpu"
                 >
-                    I'm always open to new opportunities and interesting projects. Feel free to reach out if you'd like to collaborate or just chat about AI/ML, or web development!
+                    I'm always open to new opportunities and interesting projects. Feel free to reach out if you'd like to collaborate or just chat about AI/ML, or backend development!
                 </motion.p>
 
                 {/* Email CTA */}

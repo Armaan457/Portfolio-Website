@@ -68,7 +68,7 @@ const Experience = () => {
                                             </span>
                                         </h6>
                                     </div>
-                                    <div className="flex-shrink-0 w-14 h-14 rounded-md border border-neutral-700 bg-neutral-800/60 flex items-center justify-center overflow-hidden">
+                                    <div className="flex-shrink-0 w-15 h-15 rounded-md border border-neutral-700 bg-neutral-800/60 flex items-center justify-center overflow-hidden">
                                         {experience.logo ? (
                                             <img
                                                 src={experience.logo}

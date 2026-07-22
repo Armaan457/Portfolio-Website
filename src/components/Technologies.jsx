@@ -9,7 +9,9 @@ import { SiLangchain } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 import { SiMlflow } from "react-icons/si";
 import { SiNeo4J } from "react-icons/si";
+import { SiCloudflare } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { SiRedis } from "react-icons/si";
 import crewailogo from "../assets/Technologies/crewaiLogo.png";
 import langgraphlogo from "../assets/Technologies/langgraphLogo.png";
 import sklearnlogo from "../assets/Technologies/sklearnLogo.png";
@@ -112,6 +114,7 @@ const Technologies = () => {
                     <TechCard label="MongoDB"><SiMongodb className="text-7xl text-green-500" /></TechCard>
                     <TechCard label="Neo4j"><SiNeo4J className="text-7xl text-blue-400" /></TechCard>
                     <TechCard label="Pinecone"><img src={pinecone} alt="Pinecone" className="w-20 h-20 object-contain" /></TechCard>
+                    <TechCard label="Redis"><SiRedis className="text-7xl text-red-500" /></TechCard>
                 </motion.div>
             </motion.div>
 
@@ -131,6 +134,7 @@ const Technologies = () => {
                     <TechCard label="MLflow"><SiMlflow className="text-7xl text-blue-400" /></TechCard>
                     <TechCard label="DVC"><img src={dvclogo} alt="DVC" className="w-20 h-20 object-contain" /></TechCard>
                     <TechCard label="Google Cloud Platform"><img src={gcp} alt="GCP" className="w-20 h-20 object-contain" /></TechCard>
+                    <TechCard label="Cloudflare"><SiCloudflare className="text-7xl text-orange-400" /></TechCard>
                 </motion.div>
             </motion.div>
         </div>
