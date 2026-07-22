@@ -17,7 +17,7 @@ import amazon from "../assets/Achievements/amazonLogo.png";
 
 export const HERO_CONTENT = `I am a passionate AI/ML and Backend Engineer that enjoys working on impactful projects that challenge my limits, enhance user experience, and drive business growth. My interests also extend to research, particularly in the field of Computer Vision, Large Language Models and Multimodal AI. `;
 
-export const ABOUT_TEXT = `I am a final-year Computer Engineering student at Thapar Institute of Engineering and Technology, passionate about Artificial Intelligence, Machine Learning, and building intelligent systems for real-world problems. My experience spans classical machine learning, time series forecasting, NLP, large language models (LLMs), computer vision, multimodal AI, and agentic AI. I also build end-to-end applications using FastAPI and Django on the backend, React on the frontend, and modern MLOps practices. Beyond development, I actively participate in and organize hackathons and technical events.`;
+export const ABOUT_TEXT = `I am a final-year Computer Engineering student at Thapar Institute of Engineering and Technology, passionate about Artificial Intelligence, Machine Learning, and building intelligent systems for real-world problems. My experience spans classical machine learning, time series forecasting, NLP, large language models, computer vision, multimodal AI, and agentic AI. I also build end-to-end applications using FastAPI and Django on the backend, React on the frontend, and modern MLOps practices. Beyond development, I actively participate in and organize hackathons and technical events.`;
 
 export const EXPERIENCES = [
   {
