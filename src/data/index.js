@@ -6,7 +6,6 @@ import project5 from "../assets/Projects/project-5.png";
 import drdo from "../assets/Experience/drdoLogo.png";
 import forageai from "../assets/Experience/forageaiLogo.png";
 import valency from "../assets/Experience/valencyLogo.png";
-import deradh from "../assets/Experience/deradhLogo.png";
 import sih from "../assets/Achievements/sihLogo.png";
 import bwave from "../assets/Achievements/bwaveLogo.png";
 import acm from "../assets/Achievements/acmLogo.png";
@@ -14,12 +13,25 @@ import howasp from "../assets/Achievements/howaspLogo.png";
 import dsai from "../assets/Achievements/dsaiLogo.png";
 import tiet from "../assets/Achievements/tietLogo.png";
 import amazon from "../assets/Achievements/amazonLogo.png";
+import zotik from "../assets/Experience/zotikLogo.png";
 
 export const HERO_CONTENT = `I am a passionate AI/ML and Backend Engineer that enjoys working on impactful projects that challenge my limits, enhance user experience, and drive business growth. My interests also extend to research, particularly in the field of Computer Vision, Large Language Models and Multimodal AI. `;
 
 export const ABOUT_TEXT = `I am a final-year Computer Engineering student at Thapar Institute of Engineering and Technology, passionate about Artificial Intelligence, Machine Learning, and building intelligent systems for real-world problems. My experience spans classical machine learning, time series forecasting, NLP, large language models, computer vision, multimodal AI, and agentic AI. I also build end-to-end applications using FastAPI and Django on the backend, React on the frontend, and modern MLOps practices. Beyond development, I actively participate in and organize hackathons and technical events.`;
 
 export const EXPERIENCES = [
+  {
+    year : "May 2026 - July 2026",
+    role : "SDE Intern",
+    company : "Zotik",
+    description : [
+      "Delivered a production-ready Virtual Try-On and video generation microservice, with ~10s image generation and ~30s video generation.",
+      "Researched, implemented, and evaluated multiple VTON models to optimize generation quality and costs.",
+      "Architected asynchronous AI workflows using FastAPI, webhooks, and polling, enabling reliable long running inference with zero production downtime"
+    ],
+    technologies : ["Generative AI", "Diffusion Models", "FastAPI", "PostgreSQL", "Docker"],
+    logo : zotik
+  },
   {
     year: "June 2025 - November 2025",
     role: "AI Intern",
@@ -46,26 +58,16 @@ export const EXPERIENCES = [
     logo: forageai
   },
   {
-    year: "March 2025 - June 2025",
+    year: "March 2025 - May 2025",
     role: "SDE Intern",
     company: "Valency Energy",
     description: [
-      "Partnered in designing and implementing scalable RESTful APIs to support customer and vendor facing agents in the solar energy components sector, ensuring high performance and reliability.",
+      "Partnered in implementing and deploying scalable RESTful APIs to support customer and vendor facing agents in the solar energy components sector, ensuring high performance and reliability.",
       "Improved operational efficiency through optimised API workflows and system design."
     ],
     technologies: ["FastAPI", "MongoDB", "RBAC", "OAuth 2.0", "GCP"],
     logo: valency
-  },
-  {
-    year: "August 2024 - December 2024",
-    role: "AI/ML Development Intern",
-    company: "Deradh",
-    description: [
-      "Implemented and optimized the company's virtual try on feature through collaborative R&D, exploring state of the art models like Diffusion Models and GANs for greater realism and performance"
-    ],
-    technologies: ["Diffusion Models", "Generative Adversarial Networks", "Flask"],
-    logo: deradh
-  },
+  }
 ];
 
 export const PROJECTS = [
@@ -78,7 +80,7 @@ export const PROJECTS = [
     ],
     technologies: ["CrewAI", "Django REST", "Websockets", "Next", "PostgreSQL"],
     link: "https://github.com/Armaan457/StockPulse",
-    live: ""
+    live: "https://stockpulse.armaanjagirdar.me/"
   },
   {
     title: "AgriVerse",
