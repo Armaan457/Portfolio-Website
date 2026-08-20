@@ -4,9 +4,8 @@ import {motion} from "framer-motion";
 import { smoothEnter } from "../utils/motion";
 
 const container = (delay) => ({
-    hidden: { x: -80, opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
-        x: 0,
         opacity: 1,
         transition: smoothEnter(delay),
     },
@@ -64,8 +63,8 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 lg:p-8 mt-8 lg:mt-14">
         <div className="flex justify-center">
             <motion.div
-                initial={{ x: 80, opacity: 0, scale: 0.92 }}
-                animate={{ x: 0, opacity: 1, scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={smoothEnter(0.38)}
                 className="relative group w-11/12 max-w-[480px] transform-gpu"
             >

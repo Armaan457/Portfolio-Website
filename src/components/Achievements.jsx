@@ -7,8 +7,8 @@ const Achievements = () => {
         <div className="border-b border-neutral-800 pb-12" id="achievements">
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -24 }}
-                transition={{ type: "tween", ease: "linear", duration: 0.3 }}
+                initial={{ opacity: 0, y: -10 }}
+                transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.8 }}
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-20"
             >
@@ -24,8 +24,8 @@ const Achievements = () => {
                     <motion.div
                         key={index}
                         whileInView={{ opacity: 1, y: 0 }}
-                        initial={{ opacity: 0, y: 28 }}
-                        transition={{ type: "tween", ease: "linear", duration: 0.3, delay: index * 0.05 }}
+                        initial={{ opacity: 0, y: 12 }}
+                        transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.8, delay: index * 0.06 }}
                         viewport={{ once: true, amount: 0.2 }}
                         className="group relative transform-gpu"
                     >

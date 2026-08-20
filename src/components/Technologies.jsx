@@ -24,43 +24,51 @@ import autogenlogo from "../assets/Technologies/autogenLogo.png";
 import { motion } from "framer-motion";
 import { smoothEnter } from "../utils/motion";
 
+const getDuration = (label) => {
+    const sum = label.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    return 2.5 + (sum % 16) * 0.1;
+};
+
 const iconVariants = (duration) => ({
-    initial: { y: -10 },
+    initial: { y: -3 },
     animate: {
-        y: [10, -10],
+        y: [3, -3],
         transition: {
             duration: duration,
-            ease: "linear",
+            ease: "easeInOut",
             repeat: Infinity,
             repeatType: "reverse",
         },
     },
 });
 
-const TechCard = ({ children, label }) => (
-    <motion.div
-        variants={iconVariants(1.2)}
-        initial="initial"
-        animate="animate"
-        whileHover={{ scale: 1.1 }}
-        className="group relative"
-    >
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-50 transition duration-200"></div>
-        <div className="relative rounded-2xl border-2 border-neutral-700 group-hover:border-purple-500 p-4 bg-neutral-950 flex items-center justify-center transition-all duration-150">
-            {children}
-            <div className="absolute -bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-150 text-xs text-neutral-400 whitespace-nowrap">
-                {label}
+const TechCard = ({ children, label }) => {
+    const duration = getDuration(label);
+    return (
+        <motion.div
+            variants={iconVariants(duration)}
+            initial="initial"
+            animate="animate"
+            whileHover={{ scale: 1.03 }}
+            className="group relative"
+        >
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-200"></div>
+            <div className="relative rounded-2xl border-2 border-neutral-700 group-hover:border-purple-500/40 p-4 bg-neutral-950 flex items-center justify-center transition-all duration-150">
+                {children}
+                <div className="absolute -bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-150 text-xs text-neutral-400 whitespace-nowrap">
+                    {label}
+                </div>
             </div>
-        </div>
-    </motion.div>
-);
+        </motion.div>
+    );
+};
 
 const Technologies = () => {
     return (
         <div className="border-b border-neutral-800 pb-24" id="technologies">
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -20 }}
+                initial={{ opacity: 0, y: -10 }}
                 transition={smoothEnter(0, 0.9)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-20"
@@ -74,7 +82,7 @@ const Technologies = () => {
 
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: 16 }}
+                initial={{ opacity: 0, y: 8 }}
                 transition={smoothEnter(0.18, 0.86)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="mb-12"
@@ -99,7 +107,7 @@ const Technologies = () => {
 
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: 16 }}
+                initial={{ opacity: 0, y: 8 }}
                 transition={smoothEnter(0.26, 0.86)}
                 viewport={{ once: true, amount: 0.25 }}
                 className="mb-12"
@@ -123,12 +131,12 @@ const Technologies = () => {
 
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: 16 }}
+                initial={{ opacity: 0, y: 8 }}
                 transition={smoothEnter(0.34, 0.86)}
                 viewport={{ once: true, amount: 0.25 }}
             >
                 <h3 className="text-center text-lg font-semibold text-cyan-300 mb-8 flex items-center justify-center gap-2">
-                    Deployment
+                    DevOps and MLOps
                 </h3>
                 <motion.div
                     className="flex flex-wrap items-center justify-center gap-4"

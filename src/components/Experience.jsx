@@ -7,8 +7,8 @@ const Experience = () => {
         <div className="border-b border-neutral-800 pb-12" id="experience">
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -28 }}
-                transition={{ type: "tween", ease: "linear", duration: 0.3 }}
+                initial={{ opacity: 0, y: -10 }}
+                transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.8 }}
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-20"
             >
@@ -27,15 +27,15 @@ const Experience = () => {
                         key={index}
                         whileInView={{ opacity: 1 }}
                         initial={{ opacity: 0 }}
-                        transition={{ type: "tween", ease: "linear", duration: 0.28, delay: index * 0.03 }}
+                        transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.8, delay: index * 0.05 }}
                         viewport={{ once: true, amount: 0.2 }}
                         className="mb-12 flex flex-wrap lg:justify-start transform-gpu"
                     >
                         {/* Timeline dot and year */}
                         <motion.div 
                         whileInView={{ opacity: 1, scale: 1 }}
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        transition={{ type: "tween", ease: "linear", duration: 0.28 }}
+                        initial={{ opacity: 0, scale: 0.98 }}
+                        transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.8 }}
                         className="w-full lg:w-1/4 mb-4 lg:mb-0 transform-gpu">
                             <div className="flex items-center gap-4">
                                 <div className="hidden lg:block relative">
@@ -53,8 +53,8 @@ const Experience = () => {
                         {/* Experience card */}
                         <motion.div 
                         whileInView={{ opacity: 1, x: 0 }}
-                        initial={{ opacity: 0, x: 32 }}
-                        transition={{ type: "tween", ease: "linear", duration: 0.28 }}
+                        initial={{ opacity: 0, x: 12 }}
+                        transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.8 }}
                         className="w-full lg:w-3/4 lg:pl-8 lg:pr-4 transform-gpu">
                             <div className="group relative p-6 rounded-lg border border-neutral-700 hover:border-purple-500 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300">
                                 <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>

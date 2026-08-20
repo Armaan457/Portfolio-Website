@@ -7,8 +7,8 @@ const About = () => {
     return (
         <div className="border-b border-neutral-800 pb-12" id="about">
             <motion.div
-                whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -40 }}
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
                 transition={smoothEnter(0, 0.9)}
                 viewport={{ once: true, amount: 0.3 }}
                 className="flex items-center justify-center gap-3 mb-20"
@@ -20,8 +20,8 @@ const About = () => {
                 <div className="h-px bg-gradient-to-r from-purple-500 to-transparent w-8"></div>
             </motion.div>
             <motion.div 
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -56 }}
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
                 transition={smoothEnter(0.18, 0.9)}
                 viewport={{ once: true, amount: 0.2 }}
                 className="flex flex-wrap lg:flex-nowrap gap-8"
@@ -37,8 +37,8 @@ const About = () => {
                     </motion.div>
                 </div>
                 <motion.div 
-                whileInView={{opacity:1, x:0}}
-                initial={{opacity:0, x:56}}
+                whileInView={{opacity:1}}
+                initial={{opacity:0}}
                 transition={smoothEnter(0.24, 0.9)}
                 viewport={{ once: true, amount: 0.2 }}
                 className="w-full lg:w-1/2">

@@ -19,7 +19,7 @@ const Contacts = () => {
         <div className="border-b border-neutral-800 pb-20" id="contact">
             <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: -20 }}
+                initial={{ opacity: 0, y: -10 }}
                 transition={baseTransition}
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-16"
