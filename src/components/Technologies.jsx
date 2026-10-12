@@ -10,19 +10,20 @@ import { FaDocker } from "react-icons/fa";
 import { SiMlflow } from "react-icons/si";
 import { SiNeo4J } from "react-icons/si";
 import { SiCloudflare } from "react-icons/si";
+import aws from "../assets/Technologies/awsLogo.png";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiRedis } from "react-icons/si";
-import { SiMediapipe } from "react-icons/si";
-import { SiVercel } from "react-icons/si";
+import unsloth from "../assets/Technologies/unslothLogo.png";
 import crewailogo from "../assets/Technologies/crewaiLogo.png";
-import langgraphlogo from "../assets/Technologies/langgraphLogo.png";
+import { TbBrandDatabricks } from "react-icons/tb";
 import sklearnlogo from "../assets/Technologies/sklearnLogo.png";
 import dvclogo from "../assets/Technologies/dvcLogo.png";
-import gcp from "../assets/Technologies/gcpLogo.png";
 import pinecone from "../assets/Technologies/pineconeLogo.png";
 import autogenlogo from "../assets/Technologies/autogenLogo.png";
+import deepevallogo from "../assets/Technologies/deepevalLogo.png";
 import { motion } from "framer-motion";
 import { smoothEnter } from "../utils/motion";
+import { SiGithubactions } from "react-icons/si";
 
 const getDuration = (label) => {
     const sum = label.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
@@ -98,10 +99,10 @@ const Technologies = () => {
                     <TechCard label="Hugging Face"><SiHuggingface className="text-7xl text-yellow-500" /></TechCard>
                     <TechCard label="Scikit-learn"><img src={sklearnlogo} alt="Sklearn" className="w-20 h-20 object-contain" /></TechCard>
                     <TechCard label="LangChain"><SiLangchain className="text-7xl text-green-600" /></TechCard>
-                    <TechCard label="LangGraph"><img src={langgraphlogo} alt="LangGraph" className="w-20 h-20 object-contain" /></TechCard>
                     <TechCard label="CrewAI"><img src={crewailogo} alt="CrewAI" className="w-20 h-20 object-contain" /></TechCard>
                     <TechCard label="AutoGen"><img src={autogenlogo} alt="AutoGen" className="w-20 h-20 object-contain" /></TechCard>
-                    <TechCard label="MediaPipe"><SiMediapipe className="text-7xl text-blue-400" /></TechCard>
+                    <TechCard label="DeepEval"><img src={deepevallogo} alt="DeepEval" className="w-20 h-20 object-contain" /></TechCard> 
+                    <TechCard label="Unsloth"><img src={unsloth} alt="Unsloth" className="w-20 h-20 object-contain" /></TechCard>
                 </motion.div>
             </motion.div>
 
@@ -142,11 +143,12 @@ const Technologies = () => {
                     className="flex flex-wrap items-center justify-center gap-4"
                 >
                     <TechCard label="Docker"><FaDocker className="text-7xl text-blue-500" /></TechCard>
+                    <TechCard label="Databricks"><TbBrandDatabricks className="text-7xl text-red-500" /></TechCard>
                     <TechCard label="MLflow"><SiMlflow className="text-7xl text-blue-400" /></TechCard>
                     <TechCard label="DVC"><img src={dvclogo} alt="DVC" className="w-20 h-20 object-contain" /></TechCard>
-                    <TechCard label="Google Cloud Platform"><img src={gcp} alt="GCP" className="w-20 h-20 object-contain" /></TechCard>
+                    <TechCard label="AWS"><img src={aws} alt="AWS" className="w-20 h-20 object-contain" /></TechCard>
+                    <TechCard label="GitHub Actions"><SiGithubactions className="text-7xl text-blue-600" /></TechCard>
                     <TechCard label="Cloudflare"><SiCloudflare className="text-7xl text-orange-400" /></TechCard>
-                    <TechCard label="Vercel"><SiVercel className="text-7xl text-white-400" /></TechCard>
                 </motion.div>
             </motion.div>
         </div>

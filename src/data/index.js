@@ -5,13 +5,12 @@ import project4 from "../assets/Projects/project-4.png";
 import project5 from "../assets/Projects/project-5.png";
 import drdo from "../assets/Experience/drdoLogo.png";
 import forageai from "../assets/Experience/forageaiLogo.png";
-import valency from "../assets/Experience/valencyLogo.png";
+import glance from "../assets/Experience/glanceLogo.png";
 import sih from "../assets/Achievements/sihLogo.png";
 import bwave from "../assets/Achievements/bwaveLogo.png";
-import acm from "../assets/Achievements/acmLogo.png";
 import howasp from "../assets/Achievements/howaspLogo.png";
-import dsai from "../assets/Achievements/dsaiLogo.png";
-import tiet from "../assets/Achievements/tietLogo.png";
+import flipkart from "../assets/Achievements/flipkartLogo.png";
+import acm from "../assets/Achievements/acmLogo.png";
 import amazon from "../assets/Achievements/amazonLogo.png";
 import zotik from "../assets/Experience/zotikLogo.png";
 
@@ -20,6 +19,17 @@ export const HERO_CONTENT = `I am a passionate AI/ML and Backend Engineer that e
 export const ABOUT_TEXT = `I am a final-year Computer Engineering student at Thapar Institute of Engineering and Technology, passionate about Artificial Intelligence, Machine Learning, and building intelligent systems for real-world problems. My experience spans classical machine learning, time series forecasting, NLP, large language models, computer vision, multimodal AI, and agentic AI. I also build end-to-end applications using FastAPI and Django on the backend, React on the frontend, and modern MLOps practices. Beyond development, I actively participate in and organize hackathons and technical events.`;
 
 export const EXPERIENCES = [
+  {
+    year: "August 2026 - Present",
+    role: "Applied Scientist Intern",
+    company: "Glance (InMobi)",
+    description: [
+      "Designed and developed production-ready multimodal agent pipelines with retrieval and evaluation components for a large-scale US event",
+      "Built and optimized retrieval workflows powering fast and reliable context selection across agentic generation pipelines.",
+    ],
+    technologies: ["Agentic AI", "Agents Evaluation", "RAG", "LLMs", "Databricks"],
+    logo: glance
+  },
   {
     year : "May 2026 - July 2026",
     role : "SDE Intern",
@@ -33,7 +43,7 @@ export const EXPERIENCES = [
     logo : zotik
   },
   {
-    year: "June 2025 - November 2025",
+    year: "June 2025 - October 2025",
     role: "AI Intern",
     company: "Centre for Artificial Intelligence and Robotics, DRDO",
     description: [
@@ -41,7 +51,7 @@ export const EXPERIENCES = [
       "Designed reasoning pipelines for context-aware threat intelligence and explainable responses.",
       "Optimised Neo4j knowledge graph generation and retrieval pipelines, improving pattern matching and system output"
     ],
-    technologies: ["Graph Databases", "RAG", "AutoGen", "LangGraph", "LLMs"],
+    technologies: ["Knowledge Graphs", "GraphRAG", "AutoGen", "LangGraph", "LLMs"],
     logo: drdo
 
   },
@@ -54,20 +64,9 @@ export const EXPERIENCES = [
       "Collaboratively implemented and deployed multimodal multi-agent systems using CrewAI and AWS for M&A domains, improving extraction and analysis accuracy",
       "Developed multimodal RAG pipelines for accurate and efficient information extraction across custom datasets."
     ],
-    technologies: ["CrewAI", "MultiModal AI", "NLP", "Computer Vision", "AWS"],
+    technologies: ["CrewAI", "Multimodal AI", "NLP", "Computer Vision", "AWS"],
     logo: forageai
   },
-  {
-    year: "March 2025 - May 2025",
-    role: "SDE Intern",
-    company: "Valency Energy",
-    description: [
-      "Partnered in implementing and deploying scalable RESTful APIs to support customer and vendor facing agents in the solar energy components sector, ensuring high performance and reliability.",
-      "Improved operational efficiency through optimised API workflows and system design."
-    ],
-    technologies: ["FastAPI", "MongoDB", "RBAC", "OAuth 2.0", "GCP"],
-    logo: valency
-  }
 ];
 
 export const PROJECTS = [
@@ -116,15 +115,14 @@ export const PROJECTS = [
     live: ""
   },
   {
-    title: "SecureCodeAuditor",
+    title: "BloomMesh",
     image: project5,
     description: [
-      "Engineered an agentic code auditing system leveraging LangGraph and Llama to perform comprehensive vulnerability detection and analysis.",
-      "Designed a high-performance backend with FastAPI with parallel processing, caching and proper guardrails to ensure high quality outputs."
+    "Engineered a Dynamo-style distributed Bloom filter cluster with consistent hashing, tunable quorum consistency, and fault-tolerant replication across independent nodes.",
+    "Built an asynchronous TCP storage layer with automatic topology rebalancing and keyless anti-entropy repair, enabling self-healing synchronization without transmitting raw keys."
     ],
-    technologies: ["LangGraph", "FastAPI", "React", "Redis"],
-    link: "https://github.com/Armaan457/SecureCodeAuditor",
-    live: "https://sca.armaanjagirdar.me/"
+    technologies: ["Python", "AsyncIO", "TCP", "WebSockets", "MurmurHash3"],
+    link: "https://github.com/Armaan457/BloomMesh",
   },
 ];
 
@@ -145,13 +143,13 @@ export const ACHIEVEMENTS = [
     title: "Amazon ML Summer School 2026",
     image: amazon,
     date: "July 2026",
-    description: "Selected for the Amazon ML Summer School 2026, among the top 2% of 130,000+ applicants. Participated in an intensive program covering advanced machine learning concepts taught by Amazon scientists and researchers."
+    description: "Selected for the Amazon ML Summer School 2026, among the top 2% of 130,000+ applicants. Participated in an intensive program covering advanced machine learning concepts."
   },
   {
-    title: "Undergraduate Research Fellowship by Thapar Institute of Engineering and Technology",
-    image: tiet,
-    date: "February 2026",
-    description: "Awarded the prestigious Undergraduate Research Fellowship at Thapar Institute of Engineering and Technology, selected among only 100 students across the entire college for my research project."
+    title: "Semi-Finalist at Flipkart Grid 8.0",
+    image: flipkart, 
+    date: "July 2026",
+    description: "Secured the top 1% position in Flipkart GRiD 8.0, advancing to the semi-finals by solving complex algorithmic and data structure challenges under a strict time window"
   },
   {
     title: "General Secretary, Association for Computing Machinery, Thapar Student Chapter",
