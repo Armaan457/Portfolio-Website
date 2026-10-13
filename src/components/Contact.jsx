@@ -24,11 +24,11 @@ const Contacts = () => {
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-16"
             >
-                <div className="h-px bg-gradient-to-r from-transparent to-purple-500 w-8"></div>
+                <div className="h-px bg-gradient-to-r from-transparent to-accent-primary w-8"></div>
                 <h2 className="text-center text-4xl font-bold bg-gradient-to-r from-neutral-200 to-neutral-400 bg-clip-text text-transparent">
                     Get in Touch
                 </h2>
-                <div className="h-px bg-gradient-to-r from-purple-500 to-transparent w-8"></div>
+                <div className="h-px bg-gradient-to-r from-accent-primary to-transparent w-8"></div>
             </motion.div>
 
             <div className="flex flex-col items-center space-y-8">
@@ -50,10 +50,10 @@ const Contacts = () => {
                     viewport={{ once: true, amount: 0.25 }}
                     className="relative group transform-gpu"
                 >
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
                     <button
                         onClick={handleCopyEmail}
-                        className="relative flex items-center gap-3 px-8 py-4 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
+                        className="relative flex items-center gap-3 px-8 py-4 rounded-lg bg-gradient-to-r from-accent-primary to-accent-secondary text-white font-semibold hover:shadow-lg hover:shadow-accent-glow transition-all duration-300 transform hover:scale-105"
                     >
                         <FaEnvelope className="text-2xl" />
                         <span>
@@ -74,19 +74,19 @@ const Contacts = () => {
                         href="https://www.linkedin.com/in/armaan-jagirdar-183b47285/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative p-4 rounded-lg border border-neutral-700 hover:border-purple-500 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300"
+                        className="group relative p-4 rounded-lg border border-neutral-700 hover:border-accent-primary bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300"
                     >
-                        <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-30 transition duration-500 -z-10"></div>
-                        <FaLinkedin className="text-3xl text-neutral-300 group-hover:text-purple-400 transition-colors duration-300" />
+                        <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-lg blur opacity-0 group-hover:opacity-30 transition duration-500 -z-10"></div>
+                        <FaLinkedin className="text-3xl text-neutral-300 group-hover:text-accent-primary transition-colors duration-300" />
                     </a>
                     <a
                         href="https://github.com/Armaan457"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative p-4 rounded-lg border border-neutral-700 hover:border-purple-500 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300"
+                        className="group relative p-4 rounded-lg border border-neutral-700 hover:border-accent-primary bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300"
                     >
-                        <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-30 transition duration-500 -z-10"></div>
-                        <FaGithub className="text-3xl text-neutral-300 group-hover:text-purple-400 transition-colors duration-300" />
+                        <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-lg blur opacity-0 group-hover:opacity-30 transition duration-500 -z-10"></div>
+                        <FaGithub className="text-3xl text-neutral-300 group-hover:text-accent-primary transition-colors duration-300" />
                     </a>
                 </motion.div>
 

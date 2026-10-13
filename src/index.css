@@ -2,9 +2,99 @@
 
 @import "tailwindcss";
 
+@theme {
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-light: var(--accent-light);
+  --color-accent-lighter: var(--accent-lighter);
+  --color-accent-border: var(--accent-border);
+  --color-accent-border-hover: var(--accent-border-hover);
+  --color-accent-badge-start: var(--accent-badge-start);
+  --color-accent-badge-end: var(--accent-badge-end);
+  --color-accent-glow: var(--accent-glow);
+  --color-accent-glow-subtle: var(--accent-glow-subtle);
+  --color-accent-ambient: var(--accent-ambient);
+  --color-accent-muted-bg: var(--accent-muted-bg);
+}
+
+@property --accent-primary {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgb(168, 85, 247);
+}
+
+@property --accent-secondary {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgb(236, 72, 153);
+}
+
+@property --accent-light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgb(216, 180, 254);
+}
+
+@property --accent-lighter {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgb(233, 213, 255);
+}
 
 :root {
   --font-family: 'Inter', sans-serif;
+  --accent-primary: rgb(168, 85, 247);
+  --accent-secondary: rgb(139, 92, 246);
+  --accent-light: rgb(216, 180, 254);
+  --accent-lighter: rgb(233, 213, 255);
+  --accent-border: rgba(168, 85, 247, 0.28);
+  --accent-border-hover: rgba(168, 85, 247, 0.55);
+  --accent-badge-start: rgba(168, 85, 247, 0.16);
+  --accent-badge-end: rgb(139, 92, 246, 0.16);
+  --accent-glow: rgba(168, 85, 247, 0.38);
+  --accent-glow-subtle: rgba(168, 85, 247, 0.18);
+  --accent-ambient: rgba(168, 85, 247, 0.20);
+  --accent-muted-bg: rgba(168, 85, 247, 0.08);
+  animation: accent-color-cycle 20s linear infinite;
+}
+
+@keyframes accent-color-cycle {
+  0%, 100% {
+    --accent-primary: rgb(168, 85, 247);
+    --accent-secondary: rgb(139, 92, 246);
+    --accent-light: rgb(216, 180, 254);
+    --accent-lighter: rgb(233, 213, 255);
+  }
+  25% {
+    --accent-primary: rgb(59, 130, 246);
+    --accent-secondary: rgb(14, 165, 233);
+    --accent-light: rgb(147, 197, 253);
+    --accent-lighter: rgb(191, 219, 254);
+  }
+  50% {
+    --accent-primary: rgb(45, 212, 191);
+    --accent-secondary: rgb(6, 182, 212);
+    --accent-light: rgb(153, 246, 228);
+    --accent-lighter: rgb(204, 251, 241);
+  }
+  65% {
+    --accent-primary: rgb(59, 130, 246);
+    --accent-secondary: rgb(14, 165, 233);
+    --accent-light: rgb(147, 197, 253);
+    --accent-lighter: rgb(191, 219, 254);
+  }
+  75% {
+    --accent-primary: rgb(168, 85, 247);
+    --accent-secondary: rgb(139, 92, 246);
+    --accent-light: rgb(216, 180, 254);
+    --accent-lighter: rgb(233, 213, 255);
+  }
+  88% {
+    --accent-primary: rgb(251, 113, 133);
+    --accent-secondary: rgb(244, 114, 182);
+    --accent-light: rgb(254, 205, 211);
+    --accent-lighter: rgb(255, 228, 230);
+  }
 }
 
 /* Hide scrollbars while keeping scroll functional */
@@ -61,14 +151,14 @@ button:active {
 
 /* Text selection styling */
 ::selection {
-  background: rgba(168, 85, 247, 0.3);
-  color: #e9d5ff;
+  background: var(--accent-border-hover, rgba(168, 85, 247, 0.4));
+  color: #ffffff;
 }
 
 /* Improved focus states for accessibility */
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid #a855f7;
+  outline: 2px solid var(--accent-primary, #a855f7);
   outline-offset: 2px;
 }
 
@@ -82,4 +172,22 @@ a:focus-visible {
 /* Prevent transition on initial page load */
 .no-transition {
   @apply transition-none;
+}
+
+@keyframes cd-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cd-spinning {
+  animation: cd-spin 3.5s linear infinite;
+}
+
+.cd-paused {
+  animation: cd-spin 3.5s linear infinite;
+  animation-play-state: paused;
 }

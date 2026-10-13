@@ -12,15 +12,15 @@ const Experience = () => {
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-20"
             >
-                <div className="h-px bg-gradient-to-r from-transparent to-purple-500 w-8"></div>
+                <div className="h-px bg-gradient-to-r from-transparent to-accent-primary w-8"></div>
                 <h2 className="text-center text-4xl font-bold bg-gradient-to-r from-neutral-200 to-neutral-400 bg-clip-text text-transparent">
                     Experience
                 </h2>
-                <div className="h-px bg-gradient-to-r from-purple-500 to-transparent w-8"></div>
+                <div className="h-px bg-gradient-to-r from-accent-primary to-transparent w-8"></div>
             </motion.div>
             <div className="relative">
                 {/* Timeline line */}
-                <div className="hidden lg:block absolute left-1/4 top-0 bottom-0 w-px bg-gradient-to-b from-purple-600 via-purple-500 to-transparent opacity-30"></div>
+                <div className="hidden lg:block absolute left-1/4 top-0 bottom-0 w-px bg-gradient-to-b from-accent-primary via-accent-secondary to-transparent opacity-30"></div>
 
                 {EXPERIENCES.map((experience, index) => (
                     <motion.div 
@@ -39,13 +39,13 @@ const Experience = () => {
                         className="w-full lg:w-1/4 mb-4 lg:mb-0 transform-gpu">
                             <div className="flex items-center gap-4">
                                 <div className="hidden lg:block relative">
-                                    <div className="w-6 h-6 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full border-4 border-neutral-950"></div>
+                                    <div className="w-6 h-6 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-full border-4 border-neutral-950"></div>
                                 </div>
                                 <div>
                                     <div className="inline-block lg:hidden mb-4">
-                                        <FaBriefcase className="text-purple-400 text-lg" />
+                                        <FaBriefcase className="text-accent-primary text-lg" />
                                     </div>
-                                    <p className="text-sm md:text-base lg:text-base font-semibold text-purple-400 leading-none">{experience.year}</p>
+                                    <p className="text-sm md:text-base lg:text-base font-semibold text-accent-light leading-none">{experience.year}</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -56,14 +56,14 @@ const Experience = () => {
                         initial={{ opacity: 0, x: 12 }}
                         transition={{ type: "tween", ease: [0.22, 1, 0.36, 1], duration: 0.8 }}
                         className="w-full lg:w-3/4 lg:pl-8 lg:pr-4 transform-gpu">
-                            <div className="group relative p-6 rounded-lg border border-neutral-700 hover:border-purple-500 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300">
-                                <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>
+                            <div className="group relative p-6 rounded-lg border border-neutral-700 hover:border-accent-primary bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300">
+                                <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>
                                 
                                 <div className="flex items-start justify-between gap-4 mb-2">
                                     <div>
                                         <h6 className="font-bold text-neutral-100 text-lg">
                                             {experience.role}
-                                            <span className="text-sm text-purple-300 font-semibold block">
+                                            <span className="text-sm text-accent-light font-semibold block">
                                                 {experience.company}
                                             </span>
                                         </h6>
@@ -96,7 +96,7 @@ const Experience = () => {
                                         <motion.span 
                                             key={techIndex}
                                             whileHover={{ scale: 1.05 }}
-                                            className="px-3 py-1 rounded-full bg-gradient-to-r from-purple-900/40 to-pink-900/40 border border-purple-500/30 text-purple-300 text-xs font-medium hover:border-purple-400 transition-all duration-300"
+                                            className="px-3 py-1 rounded-full bg-gradient-to-r from-accent-badge-start to-accent-badge-end border border-accent-border text-accent-light text-xs font-medium hover:border-accent-primary transition-all duration-300"
                                         >
                                             {tech}
                                         </motion.span>

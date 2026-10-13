@@ -12,11 +12,11 @@ const Projects = () => {
             viewport={{ once: true, amount: 0.25 }}
             className="flex items-center justify-center gap-3 mb-20"
         >
-            <div className="h-px bg-gradient-to-r from-transparent to-purple-500 w-8"></div>
+            <div className="h-px bg-gradient-to-r from-transparent to-accent-primary w-8"></div>
             <h2 className="text-center text-4xl font-bold bg-gradient-to-r from-neutral-200 to-neutral-400 bg-clip-text text-transparent">
                 Featured Projects
             </h2>
-            <div className="h-px bg-gradient-to-r from-purple-500 to-transparent w-8"></div>
+            <div className="h-px bg-gradient-to-r from-accent-primary to-transparent w-8"></div>
         </motion.div>
         <div className="space-y-8">
             {PROJECTS.map((project, index) => (
@@ -29,9 +29,9 @@ const Projects = () => {
                     className="group relative transform-gpu"
                 >
                     {/* Gradient background */}
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-30 transition duration-500 -z-10"></div>
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-lg blur opacity-0 group-hover:opacity-30 transition duration-500 -z-10"></div>
                     
-                    <div className="flex flex-col lg:flex-row gap-4 p-4 rounded-lg border border-neutral-700 hover:border-purple-300 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300">
+                    <div className="flex flex-col lg:flex-row gap-4 p-4 rounded-lg border border-neutral-700 hover:border-accent-primary bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300">
                         {/* Image Section */}
                         <motion.div 
                         className="w-full lg:w-2/5 flex-shrink-0">
@@ -56,7 +56,7 @@ const Projects = () => {
                         className="w-full lg:w-2/3 flex flex-col justify-between">
                             <div>
                                 <motion.h6 
-                                    className="mb-3 font-bold text-neutral-100 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400 hover:bg-clip-text transition-all duration-300"
+                                    className="mb-3 font-bold text-neutral-100 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:from-accent-primary hover:to-accent-secondary hover:bg-clip-text transition-all duration-300"
                                 >
                                     {project.title}
                                 </motion.h6>
@@ -77,7 +77,7 @@ const Projects = () => {
                                     <motion.span 
                                         key={techIndex}
                                         whileHover={{ scale: 1.05, y: -2 }}
-                                        className="px-3 py-1 rounded-full bg-gradient-to-r from-purple-900/40 to-pink-900/40 border border-purple-500/30 text-purple-300 text-xs font-medium hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 cursor-default"
+                                        className="px-3 py-1 rounded-full bg-gradient-to-r from-accent-badge-start to-accent-badge-end border border-accent-border text-accent-light text-xs font-medium hover:border-accent-primary hover:shadow-lg hover:shadow-accent-glow-subtle transition-all duration-300 cursor-default"
                                     >
                                         {tech}
                                     </motion.span>
@@ -102,7 +102,7 @@ const Projects = () => {
                                     href={project.link}
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-sm hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
+                                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-accent-primary to-accent-secondary text-white font-semibold text-sm hover:shadow-lg hover:shadow-accent-glow transition-all duration-300 transform hover:scale-105"
                                 >
                                     View Repository
                                     <FaExternalLinkAlt className="text-xs" />

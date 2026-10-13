@@ -13,11 +13,11 @@ const About = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="flex items-center justify-center gap-3 mb-20"
             >
-                <div className="h-px bg-gradient-to-r from-transparent to-purple-500 w-8"></div>
+                <div className="h-px bg-gradient-to-r from-transparent to-accent-primary w-8"></div>
                 <h2 className="text-center text-5xl font-bold bg-gradient-to-r from-neutral-200 to-neutral-400 bg-clip-text text-transparent">
                     About Me
                 </h2>
-                <div className="h-px bg-gradient-to-r from-purple-500 to-transparent w-8"></div>
+                <div className="h-px bg-gradient-to-r from-accent-primary to-transparent w-8"></div>
             </motion.div>
             <motion.div 
                 whileInView={{ opacity: 1 }}
@@ -32,7 +32,7 @@ const About = () => {
                         transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
                         className="relative group"
                     >
-                        <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-20 group-hover:opacity-50 transition duration-1000"></div>
+                        <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-2xl blur opacity-20 group-hover:opacity-50 transition duration-1000"></div>
                         <img className="relative rounded-2xl w-full object-cover" src={aboutImg} alt="about" />
                     </motion.div>
                 </div>

@@ -30,9 +30,9 @@ const Hero = () => {
                 variants={container(0.15)}
                 initial="hidden"
                 animate="visible"
-                className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/20 mb-6 inline-block self-center lg:self-start text-center"
+                className="px-4 py-2 rounded-full bg-gradient-to-r from-accent-badge-start to-accent-badge-end border border-accent-border mb-6 inline-block self-center lg:self-start text-center"
             >
-                <span className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-400 bg-clip-text text-transparent font-semibold text-sm sm:text-base">
+                <span className="bg-gradient-to-r from-accent-secondary via-slate-300 to-accent-light bg-clip-text text-transparent font-semibold text-sm sm:text-base">
                     Deep Learning • Agentic AI • Backend • MLOps • DSA
                 </span>
             </motion.span>
@@ -51,10 +51,10 @@ const Hero = () => {
                 animate="visible"
                 className="flex gap-4 mt-8"
              >
-                <a href="https://drive.google.com/file/d/1GasFyPmqDAOL36yYyJOpxvtat4QkbCOS/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                <a href="https://drive.google.com/file/d/1GasFyPmqDAOL36yYyJOpxvtat4QkbCOS/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg bg-gradient-to-r from-accent-primary to-accent-secondary text-white font-semibold hover:shadow-lg hover:shadow-accent-glow transition-all duration-300 transform hover:scale-105">
                     View My Work
                 </a>
-                <a href="#contact" className="px-8 py-3 rounded-lg border border-purple-500 text-purple-300 font-semibold hover:bg-purple-500/10 transition-all duration-300">
+                <a href="#contact" className="px-8 py-3 rounded-lg border border-accent-primary text-accent-light font-semibold hover:bg-accent-muted-bg transition-all duration-300">
                     Get in Touch
                 </a>
              </motion.div>
@@ -68,7 +68,7 @@ const Hero = () => {
                 transition={smoothEnter(0.38)}
                 className="relative group w-11/12 max-w-[480px] transform-gpu"
             >
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-20 group-hover:opacity-50 transition duration-1000"></div>
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-xl blur opacity-20 group-hover:opacity-50 transition duration-1000"></div>
                 <img src={profilePic} alt="Armaan Jagirdar" className="relative rounded-xl w-full"/>
             </motion.div>
         </div>

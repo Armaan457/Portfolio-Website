@@ -53,8 +53,8 @@ const TechCard = ({ children, label }) => {
             whileHover={{ scale: 1.03 }}
             className="group relative"
         >
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-200"></div>
-            <div className="relative rounded-2xl border-2 border-neutral-700 group-hover:border-purple-500/40 p-4 bg-neutral-950 flex items-center justify-center transition-all duration-150">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-2xl blur opacity-0 group-hover:opacity-25 transition duration-200"></div>
+            <div className="relative rounded-2xl border-2 border-neutral-700 group-hover:border-accent-border-hover p-4 bg-neutral-950 flex items-center justify-center transition-all duration-150">
                 {children}
                 <div className="absolute -bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-150 text-xs text-neutral-400 whitespace-nowrap">
                     {label}
@@ -74,11 +74,11 @@ const Technologies = () => {
                 viewport={{ once: true, amount: 0.25 }}
                 className="flex items-center justify-center gap-3 mb-20"
             >
-                <div className="h-px bg-gradient-to-r from-transparent to-purple-500 w-8"></div>
+                <div className="h-px bg-gradient-to-r from-transparent to-accent-primary w-8"></div>
                 <h2 className="text-center text-4xl font-bold bg-gradient-to-r from-neutral-200 to-neutral-400 bg-clip-text text-transparent">
                     Technologies & Tools
                 </h2>
-                <div className="h-px bg-gradient-to-r from-purple-500 to-transparent w-8"></div>
+                <div className="h-px bg-gradient-to-r from-accent-primary to-transparent w-8"></div>
             </motion.div>
 
             <motion.div
@@ -88,7 +88,7 @@ const Technologies = () => {
                 viewport={{ once: true, amount: 0.25 }}
                 className="mb-12"
             >
-                <h3 className="text-center text-lg font-semibold text-purple-300 mb-8 flex items-center justify-center gap-2">
+                <h3 className="text-center text-lg font-semibold text-accent-light mb-8 flex items-center justify-center gap-2">
                     Artifical Intelligence & Machine Learning
                 </h3>
                 <motion.div

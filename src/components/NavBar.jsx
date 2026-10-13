@@ -26,7 +26,7 @@ const Navbar = () => {
                 className="flex flex-shrink-0 items-center cursor-pointer"
             >
                 <a href="#" className="flex items-center">
-                        <img className="w-18 h-18 aspect-square object-contain" src={logo} alt="logo"/>
+                    <img className="w-18 h-18 aspect-square object-contain" src={logo} alt="logo"/>
                 </a>
             </motion.div>
 
@@ -36,8 +36,8 @@ const Navbar = () => {
                     <motion.a
                         key={index}
                         href={item.href}
-                        whileHover={{ backgroundColor: "rgba(168, 85, 247, 0.1)" }}
-                        className="px-4 py-2 rounded-lg text-lg text-neutral-300 hover:text-purple-300 transition-colors duration-300"
+                        whileHover={{ backgroundColor: "var(--accent-muted-bg)" }}
+                        className="px-4 py-2 rounded-lg text-lg text-neutral-300 hover:text-accent-light transition-colors duration-300"
                     >
                         {item.name}
                     </motion.a>
@@ -50,9 +50,9 @@ const Navbar = () => {
                     href="https://www.linkedin.com/in/armaan-jagirdar-183b47285/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className='group relative p-2 rounded-lg border border-neutral-700 hover:border-purple-500 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300 text-neutral-300 hover:text-purple-400'
+                    className='group relative p-2 rounded-lg border border-neutral-700 hover:border-accent-primary bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300 text-neutral-300 hover:text-accent-primary'
                 >
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>
                     <FaLinkedin />
                 </motion.a>
                 <motion.a 
@@ -60,9 +60,9 @@ const Navbar = () => {
                     href="https://github.com/Armaan457" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className='group relative p-2 rounded-lg border border-neutral-700 hover:border-purple-500 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300 text-neutral-300 hover:text-purple-400'
+                    className='group relative p-2 rounded-lg border border-neutral-700 hover:border-accent-primary bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300 text-neutral-300 hover:text-accent-primary'
                 >
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>
                     <FaGithub />
                 </motion.a>
                 <motion.a 
@@ -70,9 +70,9 @@ const Navbar = () => {
                     href="https://leetcode.com/u/armaan45/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className='group relative p-2 rounded-lg border border-neutral-700 hover:border-purple-500 bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300 text-neutral-300 hover:text-purple-400'
+                    className='group relative p-2 rounded-lg border border-neutral-700 hover:border-accent-primary bg-neutral-900/50 hover:bg-neutral-900/80 transition-all duration-300 text-neutral-300 hover:text-accent-primary'
                 >
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500 -z-10"></div>
                     <SiLeetcode />
                 </motion.a>
            </div>
