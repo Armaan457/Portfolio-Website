@@ -73,13 +73,10 @@ const AudioPlayer = () => {
             type="button"
             onClick={handleNextTrack}
             title="Click to change song"
-            className="flex items-center gap-2 text-left cursor-pointer group/title"
+            className="flex items-center text-left cursor-pointer group/title"
           >
             <span className="text-[13px] font-semibold text-neutral-200 group-hover/title:text-accent-light transition-colors whitespace-nowrap">
               {currentTrack.name}
-            </span>
-            <span className="text-[11px] px-2 py-0.5 rounded-full bg-neutral-800/80 text-neutral-400 group-hover/title:text-accent-lighter font-medium">
-              {trackIndex + 1}/{TRACKS.length}
             </span>
           </button>
 

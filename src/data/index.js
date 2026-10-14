@@ -14,9 +14,9 @@ import acm from "../assets/Achievements/acmLogo.png";
 import amazon from "../assets/Achievements/amazonLogo.png";
 import zotik from "../assets/Experience/zotikLogo.png";
 
-export const HERO_CONTENT = `I am a passionate AI/ML and Backend Engineer that enjoys working on impactful projects that challenge my limits, enhance user experience, and drive business growth. My interests also extend to research, particularly in the field of Computer Vision, Large Language Models and Multimodal AI. `;
+export const HERO_CONTENT = `I build AI/ML and backend systems that hold up in production. Most of my work revolves around deep learning & agentic AI pipelines along with graph based systems and async microservices, turning research prototypes into fast, reliable software that actually runs.`;
 
-export const ABOUT_TEXT = `I am a final-year Computer Engineering student at Thapar Institute of Engineering and Technology, passionate about Artificial Intelligence, Machine Learning, and building intelligent systems for real-world problems. My experience spans classical machine learning, time series forecasting, NLP, large language models, computer vision, multimodal AI, and agentic AI. I also build end-to-end applications using FastAPI and Django on the backend, React on the frontend, and modern MLOps practices. Beyond development, I actively participate in and organize hackathons and technical events.`;
+export const ABOUT_TEXT = `I am a final-year Computer Engineering student at Thapar Institute of Engineering and Technology, driven by understanding how complex systems function under the hood. My work sits at the intersection of intelligent systems and scalable software engineering, taking ideas from research all the way to production workflows. I care deeply about clean architecture, system reliability, and thoughtful software usability. Beyond the terminal, I actively organize hackathons and technical events, and previously served at a leadership role in ACM and Center of Excellence: Data Science and AI at my college.`;
 
 export const EXPERIENCES = [
   {
